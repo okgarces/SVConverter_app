@@ -1,4 +1,10 @@
 SVConverterApp::Application.routes.draw do
+  root "static_pages#home"
+  match '/help', to: 'static_pages#help', via: "GET" 
+  match '/signup', to: 'usuarios#new', via: "GET"
+
+  get "static_pages/home"
+  get "static_pages/help"
   resources :videos
 
   resources :usuarios

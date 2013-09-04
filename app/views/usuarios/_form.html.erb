@@ -1,16 +1,19 @@
+<div class="row">
+  <div class="span6 offset3">
 <%= form_for(@usuario) do |f| %>
   <% if @usuario.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
-
+      <div class="alert alert-error">
+      <h2> The Form contains <%= pluralize(@usuario.errors.count, "error") %> </h2>
+      </div>
       <ul>
       <% @usuario.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
+
     </div>
   <% end %>
-
   <div class="field">
     <%= f.label :nombre %><br>
     <%= f.text_field :nombre %>
@@ -24,10 +27,16 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :passwd %><br>
-    <%= f.text_field :passwd %>
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation %><br>
+    <%= f.password_field :password_confirmation %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+</div>
+</div>
 <% end %>
