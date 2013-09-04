@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: MyString
+  usuario_id: 1
+  fecha_upload: 2013-09-02 16:12:46
+  mensaje: MyString
+  estado: 1
+  fecha_publicado: 2013-09-02 16:12:46
+  ruta: MyString
+
+two:
+  nombre: MyString
+  usuario_id: 1
+  fecha_upload: 2013-09-02 16:12:46
+  mensaje: MyString
+  estado: 1
+  fecha_publicado: 2013-09-02 16:12:46
+  ruta: MyString
