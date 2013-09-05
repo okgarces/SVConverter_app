@@ -1,7 +1,22 @@
+<div class="row">
 <p>
   <strong>Nombre:</strong>
   <%= @usuario.nombre %> <%= @usuario.apellido %> < <%= @usuario.email %> >
 </p>
+
+<div class="span8">
+	<% if @usuario.videos.any? %>
+		<h3> Postear un Video </h3>
+		<h4> Aquí irá código para subir archivo </h4>
+		<h3> Videos </h3>
+		<ol>
+			<%= render @videos %>
+		</ol>
+		<%= will_paginate @videos %>
+	<% end %>
+</div>
+
+</div>
 
 <%= link_to 'Edit', edit_usuario_path(@usuario) %> |
 <%= link_to 'Back', usuarios_path %>

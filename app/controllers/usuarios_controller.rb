@@ -13,6 +13,7 @@ class UsuariosController < ApplicationController
   # GET /usuarios/1.json
   def show
     @usuario = Usuario.find(params[:id])
+    @videos = @usuario.videos.paginate(page: params[:page], per_page: 30, order: 'fecha_upload DESC')
   end
 
   # GET /usuarios/new

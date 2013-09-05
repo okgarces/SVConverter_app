@@ -1,6 +1,5 @@
 class VideosController < ApplicationController
-  before_action :set_video, only: [:show, :edit, :update, :destroy]
-
+  before_action :signed_in_user, only: [:create, :destroy]
   # GET /videos
   # GET /videos.json
   def index
@@ -24,11 +23,12 @@ class VideosController < ApplicationController
   # POST /videos
   # POST /videos.json
   def create
-    @video = Video.new(video_params)
+    @video = current_user.videos.build(video_params)
 
     respond_to do |format|
       if @video.save
-        format.html { redirect_to @video, notice: 'Video was successfully created.' }
+        flash[:success] = "El video ha sido posteado, pasarán unos segundos para ser publicado"
+        format.html { redirect_to current_user }
         format.json { render action: 'show', status: :created, location: @video }
       else
         format.html { render action: 'new' }
