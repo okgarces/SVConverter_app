@@ -5,10 +5,13 @@ SVConverterApp::Application.routes.draw do
 
   get "static_pages/home"
   get "static_pages/help"
+  
   resources :videos
 
   resources :usuarios
-
+  resources :sessions, only: [:new, :create, :destroy]
+  match '/signin', to: 'sessions#new', via: "GET"
+  match '/signout', to: 'sessions#destroy', via: "DELETE"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

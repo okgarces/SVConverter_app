@@ -1,15 +1,18 @@
 class UsuariosController < ApplicationController
-  before_action :set_usuario, only: [:show, :edit, :update, :destroy]
+  
+  before_action :signed_in_user, only: [:edit, :update]
+  before_action :correct_user, only: [:edit, :update]
 
   # GET /usuarios
   # GET /usuarios.json
   def index
-    @usuarios = Usuario.all
+    @usuarios = Usuario.paginate(page: params[:page], per_page: 2, order: 'nombre ASC')
   end
 
   # GET /usuarios/1
   # GET /usuarios/1.json
   def show
+    @usuario = Usuario.find(params[:id])
   end
 
   # GET /usuarios/new
@@ -19,6 +22,7 @@ class UsuariosController < ApplicationController
 
   # GET /usuarios/1/edit
   def edit
+    @usuario = Usuario.find(params[:id])
   end
 
   # POST /usuarios
@@ -28,7 +32,9 @@ class UsuariosController < ApplicationController
 
     respond_to do |format|
       if @usuario.save
-        format.html { redirect_to @usuario, notice: 'Usuario was successfully created.' }
+        sign_in @usuario
+        flash[:success] = 'Usuario fue creado satisfactoriamente'
+        format.html { redirect_to @usuario}
         format.json { render action: 'show', status: :created, location: @usuario }
       else
         format.html { render action: 'new' }
@@ -40,9 +46,12 @@ class UsuariosController < ApplicationController
   # PATCH/PUT /usuarios/1
   # PATCH/PUT /usuarios/1.json
   def update
+    @usuario = Usuario.find(param[:id])
     respond_to do |format|
       if @usuario.update(usuario_params)
-        format.html { redirect_to @usuario, notice: 'Usuario was successfully updated.' }
+        flash[:success] = "Perfil correctamente actualizado"
+        sig_in @usuario
+        format.html { redirect_to @usuario}
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -61,14 +70,22 @@ class UsuariosController < ApplicationController
     end
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_usuario
-      @usuario = Usuario.find(params[:id])
-    end
+  private 
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def usuario_params
-      params.require(:usuario).permit(:nombre, :apellido, :email, :password, :password_confirmation)
-    end
+  def user_params
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+  end
+
+  def signed_in_user
+    unless signed_in?
+      store_location
+      redirect_to signin_url, notice: "Por favor Inicie Sesión"
+      end
+  end
+
+  def correct_user
+    @usuario = Usuario.find(params[:id])
+    redirect_to(root_url) unless current_user?(@usuario)
+  end
+
 end

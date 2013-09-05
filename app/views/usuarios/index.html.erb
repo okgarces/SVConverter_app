@@ -1,33 +1,13 @@
+<% provide(:title, "Todos los Usuarios") %>
 <h1>Lista de usuarios</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Nombre</th>
-      <th>Apellido</th>
-      <th>Email</th>
-      <th>Passwd</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @usuarios.each do |usuario| %>
-      <tr>
-        <td><%= usuario.nombre %></td>
-        <td><%= usuario.apellido %></td>
-        <td><%= usuario.email %></td>
-        <td><%= usuario.password %></td>
-        <td><%= link_to 'Show', usuario %></td>
-        <td><%= link_to 'Edit', edit_usuario_path(usuario) %></td>
-        <td><%= link_to 'Destroy', usuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Usuario', new_usuario_path %>
+<%= will_paginate %>
+<ul class="users">
+  <% @usuarios.each do |user| %>
+    <li>
+      <%= link_to user.nombre, user %>  
+    </li>
+  <% end %>
+</ul>
+<%= will_paginate %>
