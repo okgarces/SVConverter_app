@@ -1,9 +1,10 @@
 class VideosController < ApplicationController
-  before_action :signed_in_user, only: [:create, :destroy]
+  before_action :signed_in_user, only: [:new, :create, :destroy]
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.all
+    @videos = Video.paginate(page: params[:page], per_page: 2, order: 'nombre ASC')
+ 
   end
 
   # GET /videos/1
@@ -24,13 +25,13 @@ class VideosController < ApplicationController
   # POST /videos.json
   def create
     @video = current_user.videos.build(video_params)
-
     respond_to do |format|
       if @video.save
         flash[:success] = "El video ha sido posteado, pasarán unos segundos para ser publicado"
         format.html { redirect_to current_user }
         format.json { render action: 'show', status: :created, location: @video }
       else
+        puts @video.to_s
         format.html { render action: 'new' }
         format.json { render json: @video.errors, status: :unprocessable_entity }
       end
@@ -69,6 +70,6 @@ class VideosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def video_params
-      params.require(:video).permit(:nombre, :usuario_id, :fecha_upload, :mensaje, :estado, :fecha_publicado, :ruta)
+      params.require(:video).permit(:nombre, :mensaje, :attach, :attach_file_name)
     end
 end

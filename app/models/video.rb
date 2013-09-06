@@ -1,6 +1,36 @@
 class Video < ActiveRecord::Base
+	
+	# States
+	STATE_PROCESSING = 0
+	STATE_CONVERTED = 1
+
+	# Once the video is uploaded the state must be SET
+
+	before_create { self.estado = STATE_PROCESSING } 
+
+
 	belongs_to :Usuario
-	default_scope -> { order('fecha_upload DESC')}
+	default_scope -> { order('attach_updated_at DESC')}
+	
+
 	validates :usuario_id, presence: true
 	validates :mensaje, presence: true
+	
+	has_attached_file :attach
+
+	validates_attachment_presence :attach
+	#validates_attachment_content_type :attach, :content_type => ['movie/quicktime','movie/avi','movie/mpg']
+
+	def self.converted
+		STATE_CONVERTED
+	end
+	def self.estado_to_s(estado)
+		if estado == STATE_CONVERTED
+			"Publicado"
+		elsif estado == STATE_PROCESSING
+			"Procesando"
+		else
+			"ERROR DE ESTADO"
+		end
+	end
 end

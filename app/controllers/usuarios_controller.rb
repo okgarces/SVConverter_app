@@ -13,7 +13,7 @@ class UsuariosController < ApplicationController
   # GET /usuarios/1.json
   def show
     @usuario = Usuario.find(params[:id])
-    @videos = @usuario.videos.paginate(page: params[:page], per_page: 30, order: 'fecha_upload DESC')
+    @videos = @usuario.videos.paginate(page: params[:page], per_page: 30, order: 'attach_updated_at DESC')
   end
 
   # GET /usuarios/new
@@ -73,15 +73,8 @@ class UsuariosController < ApplicationController
 
   private 
 
-  def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
-  end
-
-  def signed_in_user
-    unless signed_in?
-      store_location
-      redirect_to signin_url, notice: "Por favor Inicie Sesión"
-      end
+  def usuario_params
+    params.require(:usuario).permit(:nombre,:apellido, :email, :password, :password_confirmation)
   end
 
   def correct_user

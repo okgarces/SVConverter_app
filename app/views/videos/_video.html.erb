@@ -1,17 +1,17 @@
 <!--- Codigo para mostrar los videos -->
-		<% @videos.each do |video| %>
 		<li>
 			<span class="content">
-				<h6>Nombre:</h6> <%= video.nombre %>
-				<p> <h6>Mensaje:</h6> <%= video.mensaje %> </p>
-				<p> <h6>Estado:</h6> <%= video.estado %> </p>
+				<b>Nombre:</b> <%= video.nombre %>
+				<p> <b>Mensaje:</b> <%= video.mensaje %> </p>
+				<p> <b>Estado:</b> <%= Video.estado_to_s(video.estado) %> </p>
 			</span>
 			<span class="timestamp">
-				Creado <%= video.fecha_upload %>
+				<b>Creado</b> <%= video.attach_updated_at %>
 			</span>
+			<% if !video.fecha_publicado.nil? %>
 			<span class="timestamp">
 				Publicado <%= video.fecha_publicado %>
 			</span>
+			<% end %>
 		</li>
-		<% end %>
 <!--- Codigo para mostrar los videos -->

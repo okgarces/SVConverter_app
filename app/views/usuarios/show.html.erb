@@ -5,9 +5,10 @@
 </p>
 
 <div class="span8">
+	<h3> Postear un Video </h3>
+			<a href="<%=new_video_path%>"> Subir Video</a> 
+
 	<% if @usuario.videos.any? %>
-		<h3> Postear un Video </h3>
-		<h4> Aquí irá código para subir archivo </h4>
 		<h3> Videos </h3>
 		<ol>
 			<%= render @videos %>

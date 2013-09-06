@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130905014150) do
+ActiveRecord::Schema.define(version: 20130905205752) do
 
   create_table "usuarios", force: true do |t|
     t.string   "nombre"
@@ -26,15 +26,17 @@ ActiveRecord::Schema.define(version: 20130905014150) do
   add_index "usuarios", ["remember_token"], name: "index_usuarios_on_remember_token", using: :btree
 
   create_table "videos", force: true do |t|
-    t.string   "nombre"
     t.integer  "usuario_id"
-    t.datetime "fecha_upload"
     t.string   "mensaje"
     t.integer  "estado"
     t.datetime "fecha_publicado"
-    t.string   "ruta"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "attach_file_name"
+    t.string   "attach_content_type"
+    t.integer  "attach_file_size"
+    t.datetime "attach_updated_at"
+    t.string   "nombre"
   end
 
 end
