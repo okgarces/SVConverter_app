@@ -61,6 +61,10 @@ class VideosController < ApplicationController
     end
   end
 
+  def convertirPrueba
+    Video.process_video    
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_video
