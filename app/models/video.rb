@@ -6,11 +6,8 @@ class Video < ActiveRecord::Base
 
 
 
-	def self.process_video
-		system("ffmpeg -i public/movie.mov -strict experimental public/movie.mp4")
+	def process_video
+		system("ffmpeg -i public/movie.flv -strict experimental public/movie.mp4")
 	end
-
-    def command_line
-            
-    end
+	
 end

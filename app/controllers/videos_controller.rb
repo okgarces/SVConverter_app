@@ -62,7 +62,9 @@ class VideosController < ApplicationController
   end
 
   def convertirPrueba
-    Video.process_video    
+    videoConverter = Video.new
+    #Falta crear una instancia válida de un video para poder hacer el delayed job
+    videoConverter.delay.process_video    
   end
 
   private

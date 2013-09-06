@@ -9,7 +9,7 @@ gem 'ffmpeg'
 
 # Delayed Jobs!
 gem 'delayed_job_active_record'
-gem 'delayed_job_web'
+
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
