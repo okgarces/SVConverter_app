@@ -31504,3 +31504,2366 @@ Add '-strict experimental' if you want to use it.
   Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (12.1ms)
   Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
   Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 10:18:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (16.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/rails/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (1.2ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, fecha_upload DESC LIMIT 30 OFFSET 0
+  Rendered collection (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (51.6ms)
+  [1m[36mUsuario Load (12.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (72.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 950ms (Views: 795.6ms | ActiveRecord: 53.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:02 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 10:18:03 -0500
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 10:18:10 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"ebFKoTS3bPQXlEQKPBdIpbnYMEzyaO1WDnDAMxyY524="}
+Completed 500 Internal Server Error in 1409ms
+
+FFMPEG::Error (Failed encoding.Errors: encoded file is invalid. Full output: WARNING: gnome-keyring:: couldn't connect to: /run/user/cloud/keyring-nvIQ0k/pkcs11: No such file or directory
+ffmpeg version 0.8.6-6:0.8.6-1ubuntu2, Copyright (c) 2000-2013 the Libav developers
+  built on Mar 30 2013 22:23:21 with gcc 4.7.2
+*** THIS PROGRAM IS DEPRECATED ***
+This program is only provided for compatibility and will be removed in a future release. Please use avconv instead.
+
+Seems stream 0 codec frame rate differs from container frame rate: 2997.00 (2997/1) -> 29.97 (2997/100)
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/movie.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 537199360
+    compatible_brands: qt  
+    creation_time   : 2013-08-28 15:34:36
+  Duration: 00:03:25.17, start: 0.000000, bitrate: 111059 kb/s
+    Stream #0.0(eng): Video: prores, yuv422p10le, 1440x1080, 109501 kb/s, PAR 4:3 DAR 16:9, 29.97 fps, 29.97 tbr, 2997 tbn, 2997 tbc
+    Metadata:
+      creation_time   : 2013-08-28 15:34:36
+    Stream #0.1(eng): Audio: pcm_s16le, 48000 Hz, 2 channels, s16, 1536 kb/s
+    Metadata:
+      creation_time   : 2013-08-28 15:34:36
+    Stream #0.2(eng): Data: tmcd / 0x64636D74
+    Metadata:
+      creation_time   : 2013-08-28 15:35:27
+Incompatible pixel format 'yuv422p10le' for codec 'mpeg4', auto-selecting format 'yuv420p'
+[buffer @ 0x8fd0380] w:1440 h:1080 pixfmt:yuv422p10le
+[avsink @ 0x8fcce40] auto-inserting filter 'auto-inserted scaler 0' between the filter 'src' and the filter 'out'
+[scale @ 0x8fc4cc0] w:1440 h:1080 fmt:yuv422p10le -> w:1440 h:1080 fmt:yuv420p flags:0x4
+encoder 'aac' is experimental and might produce bad results.
+Add '-strict experimental' if you want to use it.
+):
+  app/models/video.rb:11:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.8ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 10:19:19 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"ebFKoTS3bPQXlEQKPBdIpbnYMEzyaO1WDnDAMxyY524="}
+Completed 500 Internal Server Error in 848ms
+
+FFMPEG::Error (Failed encoding.Errors: encoded file is invalid. Full output: WARNING: gnome-keyring:: couldn't connect to: /run/user/cloud/keyring-nvIQ0k/pkcs11: No such file or directory
+ffmpeg version 0.8.6-6:0.8.6-1ubuntu2, Copyright (c) 2000-2013 the Libav developers
+  built on Mar 30 2013 22:23:21 with gcc 4.7.2
+*** THIS PROGRAM IS DEPRECATED ***
+This program is only provided for compatibility and will be removed in a future release. Please use avconv instead.
+[flv @ 0x97c40a0] Estimating duration from bitrate, this may be inaccurate
+
+Seems stream 0 codec frame rate differs from container frame rate: 1000.00 (1000/1) -> 29.97 (30000/1001)
+Input #0, flv, from 'public/movie.flv':
+  Metadata:
+    audiodelay      : 0
+    canSeekToEnd    : true
+  Duration: 00:03:25.17, start: 0.000000, bitrate: 3846 kb/s
+    Stream #0.0: Video: vp6f, yuv420p, 1280x720, 3584 kb/s, 29.97 tbr, 1k tbn, 1k tbc
+    Stream #0.1: Audio: mp3, 44100 Hz, stereo, s16, 262 kb/s
+[buffer @ 0x97c6980] w:1280 h:720 pixfmt:yuv420p
+encoder 'aac' is experimental and might produce bad results.
+Add '-strict experimental' if you want to use it.
+):
+  app/models/video.rb:11:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.1ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 10:20:19 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"ebFKoTS3bPQXlEQKPBdIpbnYMEzyaO1WDnDAMxyY524="}
+Completed 500 Internal Server Error in 392ms
+
+FFMPEG::Error (Failed encoding.Errors: encoded file is invalid. Full output: WARNING: gnome-keyring:: couldn't connect to: /run/user/cloud/keyring-nvIQ0k/pkcs11: No such file or directory
+ffmpeg version 0.8.6-6:0.8.6-1ubuntu2, Copyright (c) 2000-2013 the Libav developers
+  built on Mar 30 2013 22:23:21 with gcc 4.7.2
+*** THIS PROGRAM IS DEPRECATED ***
+This program is only provided for compatibility and will be removed in a future release. Please use avconv instead.
+[flv @ 0x9b7b0a0] Estimating duration from bitrate, this may be inaccurate
+
+Seems stream 0 codec frame rate differs from container frame rate: 1000.00 (1000/1) -> 29.97 (30000/1001)
+Input #0, flv, from 'public/movie.flv':
+  Metadata:
+    audiodelay      : 0
+    canSeekToEnd    : true
+  Duration: 00:03:25.17, start: 0.000000, bitrate: 3846 kb/s
+    Stream #0.0: Video: vp6f, yuv420p, 1280x720, 3584 kb/s, 29.97 tbr, 1k tbn, 1k tbc
+    Stream #0.1: Audio: mp3, 44100 Hz, stereo, s16, 262 kb/s
+[buffer @ 0x9b7d980] w:1280 h:720 pixfmt:yuv420p
+encoder 'aac' is experimental and might produce bad results.
+Add '-strict experimental' if you want to use it.
+):
+  app/models/video.rb:11:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 10:25:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (15.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/rails/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (1.7ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, fecha_upload DESC LIMIT 30 OFFSET 0
+  Rendered collection (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (39.8ms)
+  [1m[36mUsuario Load (13.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (81.1ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 1067ms (Views: 970.9ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:37 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:38 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:38 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:38 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:38 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:38 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:38 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 10:25:38 -0500
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 10:25:39 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 893ms
+
+FFMPEG::Error (Failed encoding.Errors: encoded file is invalid. Full output: ffmpeg version 0.8.6-6:0.8.6-1ubuntu2, Copyright (c) 2000-2013 the Libav developers
+  built on Mar 30 2013 22:23:21 with gcc 4.7.2
+*** THIS PROGRAM IS DEPRECATED ***
+This program is only provided for compatibility and will be removed in a future release. Please use avconv instead.
+[flv @ 0x9e62280] Estimating duration from bitrate, this may be inaccurate
+
+Seems stream 0 codec frame rate differs from container frame rate: 1000.00 (1000/1) -> 29.97 (30000/1001)
+Input #0, flv, from 'public/movie.flv':
+  Metadata:
+    audiodelay      : 0
+    canSeekToEnd    : true
+  Duration: 00:03:25.17, start: 0.000000, bitrate: 3846 kb/s
+    Stream #0.0: Video: vp6f, yuv420p, 1280x720, 3584 kb/s, 29.97 tbr, 1k tbn, 1k tbc
+    Stream #0.1: Audio: mp3, 44100 Hz, stereo, s16, 262 kb/s
+[buffer @ 0x9e65100] w:1280 h:720 pixfmt:yuv420p
+encoder 'aac' is experimental and might produce bad results.
+Add '-strict experimental' if you want to use it.
+):
+  app/models/video.rb:11:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/rails/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (0.4ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, fecha_upload DESC LIMIT 30 OFFSET 0
+  Rendered collection (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (22.9ms)
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (15.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 165ms (Views: 139.6ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 10:31:40 -0500
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 10:31:48 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 312ms
+
+FFMPEG::Error (Failed encoding.Errors: encoded file is invalid. Full output: ffmpeg version 0.8.6-6:0.8.6-1ubuntu2, Copyright (c) 2000-2013 the Libav developers
+  built on Mar 30 2013 22:23:21 with gcc 4.7.2
+*** THIS PROGRAM IS DEPRECATED ***
+This program is only provided for compatibility and will be removed in a future release. Please use avconv instead.
+[flv @ 0x95d9280] Estimating duration from bitrate, this may be inaccurate
+
+Seems stream 0 codec frame rate differs from container frame rate: 1000.00 (1000/1) -> 29.97 (30000/1001)
+Input #0, flv, from 'public/movie.flv':
+  Metadata:
+    audiodelay      : 0
+    canSeekToEnd    : true
+  Duration: 00:03:25.17, start: 0.000000, bitrate: 3846 kb/s
+    Stream #0.0: Video: vp6f, yuv420p, 1280x720, 3584 kb/s, 29.97 tbr, 1k tbn, 1k tbc
+    Stream #0.1: Audio: mp3, 44100 Hz, stereo, s16, 262 kb/s
+Unrecognized option 'preset'
+Failed to set value 'medium' for option 'preset'
+):
+  app/models/video.rb:11:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 10:34:51 -0500
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/rails/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (0.4ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, fecha_upload DESC LIMIT 30 OFFSET 0
+  Rendered collection (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (26.5ms)
+  [1m[36mUsuario Load (0.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (12.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 226ms (Views: 85.1ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 10:34:52 -0500
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 10:34:58 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 319ms
+
+FFMPEG::Error (Failed encoding.Errors: encoded file is invalid. Full output: ffmpeg version 0.8.6-6:0.8.6-1ubuntu2, Copyright (c) 2000-2013 the Libav developers
+  built on Mar 30 2013 22:23:21 with gcc 4.7.2
+*** THIS PROGRAM IS DEPRECATED ***
+This program is only provided for compatibility and will be removed in a future release. Please use avconv instead.
+[flv @ 0x8aa5280] Estimating duration from bitrate, this may be inaccurate
+
+Seems stream 0 codec frame rate differs from container frame rate: 1000.00 (1000/1) -> 29.97 (30000/1001)
+Input #0, flv, from 'public/movie.flv':
+  Metadata:
+    audiodelay      : 0
+    canSeekToEnd    : true
+  Duration: 00:03:25.17, start: 0.000000, bitrate: 3846 kb/s
+    Stream #0.0: Video: vp6f, yuv420p, 1280x720, 3584 kb/s, 29.97 tbr, 1k tbn, 1k tbc
+    Stream #0.1: Audio: mp3, 44100 Hz, stereo, s16, 262 kb/s
+[buffer @ 0x8aa8100] w:1280 h:720 pixfmt:yuv420p
+encoder 'aac' is experimental and might produce bad results.
+Add '-strict experimental' if you want to use it.
+):
+  app/models/video.rb:11:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/rails/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (5.3ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, fecha_upload DESC LIMIT 30 OFFSET 0
+  Rendered collection (0.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (20.3ms)
+  [1m[36mUsuario Load (0.7ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (35.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 102ms (Views: 82.6ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:27 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 10:38:28 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 304ms
+
+FFMPEG::Error (Failed encoding.Errors: encoded file is invalid. Full output: ffmpeg version 0.8.6-6:0.8.6-1ubuntu2, Copyright (c) 2000-2013 the Libav developers
+  built on Mar 30 2013 22:23:21 with gcc 4.7.2
+*** THIS PROGRAM IS DEPRECATED ***
+This program is only provided for compatibility and will be removed in a future release. Please use avconv instead.
+[flv @ 0x94b0280] Estimating duration from bitrate, this may be inaccurate
+
+Seems stream 0 codec frame rate differs from container frame rate: 1000.00 (1000/1) -> 29.97 (30000/1001)
+Input #0, flv, from 'public/movie.flv':
+  Metadata:
+    audiodelay      : 0
+    canSeekToEnd    : true
+  Duration: 00:03:25.17, start: 0.000000, bitrate: 3846 kb/s
+    Stream #0.0: Video: vp6f, yuv420p, 1280x720, 3584 kb/s, 29.97 tbr, 1k tbn, 1k tbc
+    Stream #0.1: Audio: mp3, 44100 Hz, stereo, s16, 262 kb/s
+File for preset 'medium' not found
+):
+  app/models/video.rb:11:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 10:41:40 -0500
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/rails/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (2.1ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, fecha_upload DESC LIMIT 30 OFFSET 0
+  Rendered collection (0.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (25.8ms)
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (12.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 201ms (Views: 168.9ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 10:41:41 -0500
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 10:41:42 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 302ms
+
+FFMPEG::Error (Failed encoding.Errors: encoded file is invalid. Full output: ffmpeg version 0.8.6-6:0.8.6-1ubuntu2, Copyright (c) 2000-2013 the Libav developers
+  built on Mar 30 2013 22:23:21 with gcc 4.7.2
+*** THIS PROGRAM IS DEPRECATED ***
+This program is only provided for compatibility and will be removed in a future release. Please use avconv instead.
+[flv @ 0x8cb6280] Estimating duration from bitrate, this may be inaccurate
+
+Seems stream 0 codec frame rate differs from container frame rate: 1000.00 (1000/1) -> 29.97 (30000/1001)
+Input #0, flv, from 'public/movie.flv':
+  Metadata:
+    audiodelay      : 0
+    canSeekToEnd    : true
+  Duration: 00:03:25.17, start: 0.000000, bitrate: 3846 kb/s
+    Stream #0.0: Video: vp6f, yuv420p, 1280x720, 3584 kb/s, 29.97 tbr, 1k tbn, 1k tbc
+    Stream #0.1: Audio: mp3, 44100 Hz, stereo, s16, 262 kb/s
+[buffer @ 0x8cb9100] w:1280 h:720 pixfmt:yuv420p
+[mpeg4 @ 0x8cbb480] bitrate below min bitrate
+Output #0, mp4, to 'public/success.mp4':
+    Stream #0.0: Video: mpeg4, yuv420p, 1280x720, q=2-31, 200 kb/s, 90k tbn, 29.97 tbc
+    Stream #0.1: Audio: aac, 44100 Hz, stereo, s16, 200 kb/s
+Stream mapping:
+  Stream #0.0 -> #0.0
+  Stream #0.1 -> #0.1
+Error while opening encoder for output stream #0.0 - maybe incorrect parameters such as bit_rate, rate, width or height
+):
+  app/models/video.rb:12:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.6ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 10:43:27 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 309ms
+
+FFMPEG::Error (Failed encoding.Errors: encoded file is invalid. Full output: ffmpeg version 0.8.6-6:0.8.6-1ubuntu2, Copyright (c) 2000-2013 the Libav developers
+  built on Mar 30 2013 22:23:21 with gcc 4.7.2
+*** THIS PROGRAM IS DEPRECATED ***
+This program is only provided for compatibility and will be removed in a future release. Please use avconv instead.
+[flv @ 0x9b8b280] Estimating duration from bitrate, this may be inaccurate
+
+Seems stream 0 codec frame rate differs from container frame rate: 1000.00 (1000/1) -> 29.97 (30000/1001)
+Input #0, flv, from 'public/movie.flv':
+  Metadata:
+    audiodelay      : 0
+    canSeekToEnd    : true
+  Duration: 00:03:25.17, start: 0.000000, bitrate: 3846 kb/s
+    Stream #0.0: Video: vp6f, yuv420p, 1280x720, 3584 kb/s, 29.97 tbr, 1k tbn, 1k tbc
+    Stream #0.1: Audio: mp3, 44100 Hz, stereo, s16, 262 kb/s
+[buffer @ 0x9b8e100] w:1280 h:720 pixfmt:yuv420p
+encoder 'aac' is experimental and might produce bad results.
+Add '-strict experimental' if you want to use it.
+):
+  app/models/video.rb:12:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 11:07:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/rails/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (1.4ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, fecha_upload DESC LIMIT 30 OFFSET 0
+  Rendered collection (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (28.0ms)
+  [1m[36mUsuario Load (31.8ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (83.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 643ms (Views: 497.6ms | ActiveRecord: 51.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:01 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:02 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:02 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:02 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:02 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:02 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:02 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 11:07:02 -0500
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:07:03 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 1669ms
+
+FFMPEG::Error (Failed encoding.Errors: encoded file is invalid. Full output: ffmpeg version 0.8.6-6:0.8.6-1ubuntu2, Copyright (c) 2000-2013 the Libav developers
+  built on Mar 30 2013 22:23:21 with gcc 4.7.2
+*** THIS PROGRAM IS DEPRECATED ***
+This program is only provided for compatibility and will be removed in a future release. Please use avconv instead.
+[flv @ 0x88a6280] Estimating duration from bitrate, this may be inaccurate
+
+Seems stream 0 codec frame rate differs from container frame rate: 1000.00 (1000/1) -> 29.97 (30000/1001)
+Input #0, flv, from 'public/movie.flv':
+  Metadata:
+    audiodelay      : 0
+    canSeekToEnd    : true
+  Duration: 00:03:25.17, start: 0.000000, bitrate: 3846 kb/s
+    Stream #0.0: Video: vp6f, yuv420p, 1280x720, 3584 kb/s, 29.97 tbr, 1k tbn, 1k tbc
+    Stream #0.1: Audio: mp3, 44100 Hz, stereo, s16, 262 kb/s
+[buffer @ 0x88a9100] w:1280 h:720 pixfmt:yuv420p
+encoder 'aac' is experimental and might produce bad results.
+Add '-strict experimental' if you want to use it.
+):
+  app/models/video.rb:12:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.9ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:07:27 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 689ms
+
+FFMPEG::Error (Failed encoding.Errors: encoded file is invalid. Full output: ffmpeg version 0.8.6-6:0.8.6-1ubuntu2, Copyright (c) 2000-2013 the Libav developers
+  built on Mar 30 2013 22:23:21 with gcc 4.7.2
+*** THIS PROGRAM IS DEPRECATED ***
+This program is only provided for compatibility and will be removed in a future release. Please use avconv instead.
+[flv @ 0x987b280] Estimating duration from bitrate, this may be inaccurate
+
+Seems stream 0 codec frame rate differs from container frame rate: 1000.00 (1000/1) -> 29.97 (30000/1001)
+Input #0, flv, from 'public/movie.flv':
+  Metadata:
+    audiodelay      : 0
+    canSeekToEnd    : true
+  Duration: 00:03:25.17, start: 0.000000, bitrate: 3846 kb/s
+    Stream #0.0: Video: vp6f, yuv420p, 1280x720, 3584 kb/s, 29.97 tbr, 1k tbn, 1k tbc
+    Stream #0.1: Audio: mp3, 44100 Hz, stereo, s16, 262 kb/s
+[buffer @ 0x987e100] w:1280 h:720 pixfmt:yuv420p
+encoder 'aac' is experimental and might produce bad results.
+Add '-strict experimental' if you want to use it.
+):
+  app/models/video.rb:12:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 11:12:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/rails/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (1.3ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, fecha_upload DESC LIMIT 30 OFFSET 0
+  Rendered collection (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (21.3ms)
+  [1m[36mUsuario Load (0.9ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (27.2ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 361ms (Views: 310.1ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 11:12:50 -0500
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:12:52 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 6ms
+
+NameError (undefined local variable or method `“movie' for #<Class:0xaee0f34>):
+  app/models/video.rb:10:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (60.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 11:13:19 -0500
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/rails/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (0.3ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, fecha_upload DESC LIMIT 30 OFFSET 0
+  Rendered collection (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (11.1ms)
+  [1m[36mUsuario Load (2.7ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (27.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 98ms (Views: 72.4ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 11:13:20 -0500
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:13:21 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 6ms
+
+NameError (undefined local variable or method `“public' for #<Class:0xb624f0c>):
+  app/models/video.rb:10:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.8ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:13:57 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 16ms
+
+NameError (undefined local variable or method `“public' for #<Class:0xbdd0bfc>):
+  app/models/video.rb:9:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.4ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:14:58 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 13ms
+
+NameError (undefined local variable or method `“rubygems”' for #<Class:0xa441aec>):
+  app/models/video.rb:7:in `<class:Video>'
+  app/models/video.rb:1:in `<top (required)>'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:15:33 -0500
+
+ActionController::RoutingError (undefined local variable or method `“rubygems”' for VideosController:Class):
+  app/controllers/videos_controller.rb:3:in `<class:VideosController>'
+  app/controllers/videos_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.6ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (93.4ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:16:39 -0500
+
+ActionController::RoutingError (undefined local variable or method `“ffmpeg”' for VideosController:Class):
+  app/controllers/videos_controller.rb:3:in `<class:VideosController>'
+  app/controllers/videos_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.7ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.6ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (88.6ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:16:51 -0500
+
+ActionController::RoutingError (undefined method `method_checking_enabled?' for VideosController:Class):
+  app/controllers/videos_controller.rb:8:in `<class:VideosController>'
+  app/controllers/videos_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (75.9ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:17:07 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 8ms
+
+NameError (undefined local variable or method `“rubygems”' for #<Class:0xb658be0>):
+  app/models/video.rb:7:in `<class:Video>'
+  app/models/video.rb:1:in `<top (required)>'
+  app/controllers/videos_controller.rb:67:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.5ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:17:43 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 10ms
+
+NameError (undefined local variable or method `“public' for #<Class:0xb520a318>):
+  app/models/video.rb:10:in `process_video'
+  app/controllers/videos_controller.rb:67:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.7ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:19:29 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 145ms
+
+NameError (undefined local variable or method `“public' for #<Class:0xb4a1cc8c>):
+  app/models/video.rb:13:in `process_video'
+  app/controllers/videos_controller.rb:67:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:22:34 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 8ms
+
+NameError (undefined local variable or method `“public' for #<Class:0xb5dfcb8>):
+  app/models/video.rb:12:in `process_video'
+  app/controllers/videos_controller.rb:67:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.9ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:29:52 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 14ms
+
+NameError (undefined local variable or method `“public' for #<Class:0xb609ce08>):
+  app/models/video.rb:13:in `process_video'
+  app/controllers/videos_controller.rb:67:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 11:36:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/rails/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (3.5ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, fecha_upload DESC LIMIT 30 OFFSET 0
+  Rendered collection (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (26.9ms)
+  [1m[36mUsuario Load (1.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (46.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 481ms (Views: 411.9ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 11:36:43 -0500
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:36:45 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 28ms
+
+NoMethodError (undefined method `convert' for #<Class:0x8de9844>):
+  app/models/video.rb:13:in `process_video'
+  app/controllers/videos_controller.rb:67:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 11:37:03 -0500
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/rails/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (0.8ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, fecha_upload DESC LIMIT 30 OFFSET 0
+  Rendered collection (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (11.2ms)
+  [1m[36mUsuario Load (2.7ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (45.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 126ms (Views: 103.8ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:04 -0500
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:37:07 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `convert' for #<Class:0x9f85210>):
+  app/models/video.rb:15:in `process_video'
+  app/controllers/videos_controller.rb:67:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (69.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 11:37:37 -0500
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/rails/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (6.5ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, fecha_upload DESC LIMIT 30 OFFSET 0
+  Rendered collection (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (38.9ms)
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (17.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 187ms (Views: 156.9ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:37 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 11:37:38 -0500
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:37:39 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 58ms
+
+NoMethodError (undefined method `include' for #<VideosController:0xb5886200>):
+  app/controllers/videos_controller.rb:69:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (115.0ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:38:39 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `convert' for #<VideosController:0x9ea0d90>):
+  app/controllers/videos_controller.rb:69:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.9ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:38:53 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 25ms
+
+NoMethodError (undefined method `include' for #<VideosController:0xb564e730>):
+  app/controllers/videos_controller.rb:69:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.7ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:39:41 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `include' for #<VideosController:0x9f3259c>):
+  app/controllers/videos_controller.rb:69:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.0ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:41:43 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `convert' for #<VideosController:0xb56ed754>):
+  app/controllers/videos_controller.rb:70:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.8ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:45:30 -0500
+
+SyntaxError (/home/cloud/rails/app/controllers/videos_controller.rb:70: syntax error, unexpected ',', expecting ')'
+    convert ("public/movie.flv", :to => :mp4) do
+                                ^
+/home/cloud/rails/app/controllers/videos_controller.rb:88: syntax error, unexpected keyword_end, expecting end-of-input):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__449408156__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:46:18 -0500
+
+SyntaxError (/home/cloud/rails/app/controllers/videos_controller.rb:70: syntax error, unexpected ',', expecting ')'
+    convert ("public/movie.flv", "public/movie.mp4") do
+                                ^
+/home/cloud/rails/app/controllers/videos_controller.rb:70: syntax error, unexpected ')', expecting keyword_end
+    convert ("public/movie.flv", "public/movie.mp4") do
+                                                    ^
+/home/cloud/rails/app/controllers/videos_controller.rb:88: syntax error, unexpected keyword_end, expecting end-of-input):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__449408156__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.0ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:47:14 -0500
+
+SyntaxError (/home/cloud/rails/app/controllers/videos_controller.rb:70: syntax error, unexpected ',', expecting ')'
+    convert ("public/movie.flv", "public/movie.mp4")
+                                ^
+/home/cloud/rails/app/controllers/videos_controller.rb:70: syntax error, unexpected ')', expecting keyword_end
+/home/cloud/rails/app/controllers/videos_controller.rb:83: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__449408156__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.1ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:47:24 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `convert' for #<VideosController:0x9d78f1c>):
+  app/controllers/videos_controller.rb:70:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (85.3ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:50:57 -0500
+
+SyntaxError (/home/cloud/rails/app/controllers/videos_controller.rb:70: syntax error, unexpected ',', expecting ')'
+    convert ("public/movie.flv", "public/movie.mp4")
+                                ^
+/home/cloud/rails/app/controllers/videos_controller.rb:70: syntax error, unexpected ')', expecting keyword_end
+/home/cloud/rails/app/controllers/videos_controller.rb:88: syntax error, unexpected keyword_end, expecting end-of-input):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__449408156__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:51:35 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/cloud/rails/app/models/video.rb:14: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      "ffmpeg -i "public/movie.flv" -acodec libmp3lam...
+                        ^
+/home/cloud/rails/app/models/video.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+...  "ffmpeg -i "public/movie.flv" -acodec libmp3lame -ab 64k -...
+...                               ^
+/home/cloud/rails/app/models/video.rb:14: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...c 2 -ar 44100 -f mp3 -y "public/movie.mp4""      
+...                               ^
+/home/cloud/rails/app/models/video.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+...00 -f mp3 -y "public/movie.mp4""      
+...                               ^):
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (45.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (67.2ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:52:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 42ms
+
+NameError (undefined local variable or method `command_line' for #<Class:0x9f831b8>):
+  app/models/video.rb:10:in `process_video'
+  app/controllers/videos_controller.rb:65:in `convertirPrueba'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.0ms)
+
+
+Started POST "/videos/convertirPrueba" for 127.0.0.1 at 2013-09-06 11:53:09 -0500
+Processing by VideosController#convertirPrueba as HTML
+  Parameters: {"authenticity_token"=>"bRuWO2aKZ1iHKZv/7LLPhD49u/YNY3BTXjzQvBS/jHU="}
+Completed 500 Internal Server Error in 604796ms
+
+ActionView::MissingTemplate (Missing template videos/convertirPrueba, application/convertirPrueba with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee, :haml]}. Searched in:
+  * "/home/cloud/rails/app/views"
+):
+  actionpack (4.0.0) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.0) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:413:in `_run__983322469__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1015184598__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/cloud/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.4ms)

@@ -5,10 +5,12 @@ class Video < ActiveRecord::Base
 	validates :mensaje, presence: true
 
 
+
 	def self.process_video
-    if 
-    	movie = FFMPEG::Movie.new("public/movie.wmv")
-      	movie.transcode("public/success.mp4") { |progress| puts progress }
+		system("ffmpeg -i public/movie.mov -strict experimental public/movie.mp4")
+	end
+
+    def command_line
+            
     end
-  end
 end

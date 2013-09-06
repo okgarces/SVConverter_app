@@ -5,7 +5,7 @@ gem 'rails', '4.0.0'
 
 
 # CONVERSION CON FFMPEG
-gem "streamio-ffmpeg", "1.0.0"
+gem 'ffmpeg'
 
 # Delayed Jobs!
 gem 'delayed_job_active_record'
