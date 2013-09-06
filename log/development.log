@@ -40463,3 +40463,301 @@ DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /
   Rendered layouts/_header.html.erb (3.5ms)
   Rendered layouts/_footer.html.erb (0.2ms)
 Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 02:48:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/railsapp/SVConverter_app/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (1.0ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, attach_updated_at DESC LIMIT 30 OFFSET 0
+  Rendered videos/_video.html.erb (3.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (174.8ms)
+  [1m[36mUsuario Load (0.7ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'a03263326662d38766557f5777a900679fba5bc1' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (101.0ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 554ms (Views: 495.9ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:11 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:11 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:11 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:11 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:11 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 02:48:45 -0500
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/railsapp/SVConverter_app/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (5.5ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, attach_updated_at DESC LIMIT 30 OFFSET 0
+  Rendered videos/_video.html.erb (0.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (12.7ms)
+  [1m[36mUsuario Load (0.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'a03263326662d38766557f5777a900679fba5bc1' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 83ms (Views: 71.7ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 02:48:46 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+Processing by StaticPagesController#home as HTML
+DEPRECATION WARNING: #apply_finder_options is deprecated. (called from home at /home/cloud/railsapp/SVConverter_app/app/controllers/static_pages_controller.rb:3)
+  [1m[35mVideo Load (5.3ms)[0m  SELECT "videos".* FROM "videos" WHERE "videos"."estado" = 1 ORDER BY fecha_publicado DESC, attach_updated_at DESC LIMIT 30 OFFSET 0
+  Rendered videos/_video.html.erb (0.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (11.2ms)
+  [1m[36mUsuario Load (0.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."remember_token" = 'a03263326662d38766557f5777a900679fba5bc1' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 65.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:02 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:03 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:03 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:03 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:03 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-06 02:49:03 -0500
