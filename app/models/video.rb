@@ -33,4 +33,9 @@ class Video < ActiveRecord::Base
 			"ERROR DE ESTADO"
 		end
 	end
+
+	def process_video
+		system("ffmpeg -i public/movie.flv -strict experimental public/movie.mp4")
+	end
+
 end
