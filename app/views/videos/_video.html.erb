@@ -1,17 +1,33 @@
 <!--- Codigo para mostrar los videos -->
-		<li>
+<div class="content">
+<div class="row">
+<div class="span6">
+	<div id="myElement<%= video.id %>">Loading the player...</div>
+    	<script type="text/javascript">
+        	jwplayer("myElement<%= video.id %>").setup({
+            file: "<%= video.attach.url %>",
+            width: 420,
+            height: 280,
+            title: "<%= video.mensaje %>"
+            });
+            </script>
+    </div>
+ 	<div class="span4">
 			<span class="content">
-				<b>Nombre:</b> <%= video.nombre %>
-				<p> <b>Mensaje:</b> <%= video.mensaje %> </p>
-				<p> <b>Estado:</b> <%= Video.estado_to_s(video.estado) %> </p>
+				<b>Nombre:</b> <%= video.nombre %><br>
+				<b>Mensaje:</b> <%= video.mensaje %><br>
+				<b>Usuario: </b> <%= Usuario.find(video.usuario_id).email %><br>
+				<b>Estado:</b> <font color="red"><%= Video.estado_to_s(video.estado) %></font><br>
 			</span>
 			<span class="timestamp">
-				<b>Creado</b> <%= video.attach_updated_at %>
+				<b>Creado:</b> <%= video.attach_updated_at %><br>
 			</span>
 			<% if !video.fecha_publicado.nil? %>
 			<span class="timestamp">
-				Publicado <%= video.fecha_publicado %>
+				<b>Publicado:</b> <%= video.fecha_publicado %><br>
 			</span>
 			<% end %>
-		</li>
+	</div>
+</div>
+</div>
 <!--- Codigo para mostrar los videos -->

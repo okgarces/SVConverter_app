@@ -62,6 +62,12 @@ class VideosController < ApplicationController
     end
   end
 
+  def convertirPrueba
+    videoConverter = Video.new
+    #Falta crear una instancia válida de un video para poder hacer el delayed job
+    videoConverter.delay.process_video    
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_video
