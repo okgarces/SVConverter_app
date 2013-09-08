@@ -11,9 +11,8 @@ SVConverterApp::Application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   match '/signin', to: 'sessions#new', via: "GET"
   match '/signout', to: 'sessions#destroy', via: "DELETE"
-  resources :videos do
-    post 'convertirPrueba', :on => :collection
-  end
+  match "/delayed_job" => DelayedJobWeb, :anchor => false, via: "GET"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

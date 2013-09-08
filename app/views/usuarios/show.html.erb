@@ -4,20 +4,18 @@
   <%= @usuario.nombre %> <%= @usuario.apellido %> < <%= @usuario.email %> >
 </p>
 
-<div class="span8">
 	<h3> Postear un Video </h3>
-			<a href="<%=new_video_path%>"> Subir Video</a> 
+	<%= link_to "Subir Video!", new_video_path, class: 'btn btn-large btn-primary' %> <br>
 
+<br>
 	<% if @usuario.videos.any? %>
 		<h3> Videos </h3>
-		<ol>
 			<%= render @videos %>
-		</ol>
 		<%= will_paginate @videos %>
 	<% end %>
-</div>
+
 
 </div>
-
+<br>
 <%= link_to 'Edit', edit_usuario_path(@usuario) %> |
 <%= link_to 'Back', usuarios_path %>

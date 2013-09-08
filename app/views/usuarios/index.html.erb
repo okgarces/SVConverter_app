@@ -6,7 +6,7 @@
 <ul class="users">
   <% @usuarios.each do |user| %>
     <li>
-      <%= link_to user.nombre, user %>  
+      <%= link_to "#{user.nombre} #{user.apellido}", user %> , < <%= user.email %> >, cantidad de videos subidos: <%= user.videos.count %> 
     </li>
   <% end %>
 </ul>

@@ -17,3 +17,5 @@
 
 # Ignore secret token
 .secret
+
+/public/system/*

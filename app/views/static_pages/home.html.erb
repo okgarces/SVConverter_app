@@ -7,15 +7,15 @@
 		<h1>Simple Video Converter App this is <%= yield(:title) %></h1>
 		<a href="#">This page</a> shall show different version to convert flv, avi to mp4
 
-		<%= link_to "Sign up Now!", '#', class: 'btn btn-large btn-primary' %>	
+		<%= link_to "Sign up Now!", signup_path, class: 'btn btn-large btn-primary' %>	
 </div>
 <hr>
 <div class="content">
 		<%= render @videos %>
 </div>
 
+<br>
 <%= link_to image_tag("http://rubyonrails.org/images/rails.png", alt: "rails"), "http://www.rubyonrails.org"%>
 
-<%= button_to "Convertir", {:controller => :videos, :action=>"convertirPrueba"} %>
 </body>
 </html>
