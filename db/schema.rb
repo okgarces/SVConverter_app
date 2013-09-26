@@ -33,9 +33,9 @@ ActiveRecord::Schema.define(version: 20130906193910) do
     t.string   "nombre"
     t.string   "apellido"
     t.string   "email"
+    t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "password_digest"
     t.string   "remember_token"
   end
 
