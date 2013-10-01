@@ -14,6 +14,12 @@ gem 'delayed_job_web'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 gem 'pg'
+# Se debe instalar sudo apt-get install libmysqlclient-dev
+gem 'activerecord-mysql-adapter'
+gem 'mysql2'
+gem 'aws-s3'
+# Se debe instalar apt-get install libxslt-dev libxml2-dev
+gem 'aws-sdk'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'

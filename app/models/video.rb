@@ -18,12 +18,15 @@ class Video < ActiveRecord::Base
 	validates :mensaje, presence: true
 	
 	# For the use of gem Paperclip
-	has_attached_file :attach
+	has_attached_file :attach, :storage => :s3, :s3_credentials => "#{Rails.root}/config/aws.yml", :bucket => "SVConverter"
 	validates_attachment_presence :attach
 	#validates_attachment_content_type :attach, :content_type => ['movie/quicktime','movie/avi','movie/mpg']
 
 	def self.converted
 		STATE_CONVERTED
+	end
+	def converted?
+		return (self.estado == STATE_CONVERTED)
 	end
 	def self.estado_to_s(estado)
 		if estado == STATE_CONVERTED
@@ -42,10 +45,12 @@ class Video < ActiveRecord::Base
 	def process_video
 		if self.estado == STATE_PROCESSING
 			video_url = self.attach.url(nil, false)
-			system("ffmpeg -i #{Rails.root}/public"+ video_url+ " -vcodec libx264 -strict experimental #{Rails.root}/public"+ video_url[0,video_url.size-4]+".mp4")
-			converted = File.open("#{Rails.root}/public"+video_url[0,video_url.size-4]+".mp4")
+			video_filename = self.attach.original_filename
+			system("ffmpeg -i "+ video_url+ " -vcodec libx264 -strict experimental #{Rails.root}/public/system/temp/"+ video_filename[0,video_filename.size-4]+".mp4")
+			converted = File.open("#{Rails.root}/public/system/temp/"+video_filename[0,video_filename.size-4]+".mp4")
 			self.attach = converted
 			converted.close
+			File.delete("#{Rails.root}/public/system/temp/"+video_filename[0,video_filename.size-4]+".mp4")
 			self.estado = STATE_CONVERTED
 			self.fecha_publicado = Time.zone.now
 			self.save!

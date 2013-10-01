@@ -19,6 +19,10 @@ GEM
       activesupport (= 4.0.0)
       arel (~> 4.0.0)
     activerecord-deprecated_finders (1.0.3)
+    activerecord-mysql-adapter (0.0.1)
+      activerecord (>= 3.2.9)
+      activesupport (>= 3.2.9)
+      mysql (>= 2.9.0)
     activesupport (4.0.0)
       i18n (~> 0.6, >= 0.6.4)
       minitest (~> 4.2)
@@ -27,6 +31,14 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.13)
+    aws-s3 (0.6.3)
+      builder
+      mime-types
+      xml-simple
+    aws-sdk (1.19.0)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4, < 1.6.0)
+      uuidtools (~> 2.1)
     bcrypt-ruby (3.0.1)
     bootstrap-sass (2.3.2.2)
       sass (~> 3.2)
@@ -80,6 +92,9 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.0)
+    mysql (2.9.1)
+    mysql2 (0.3.13)
+    nokogiri (1.5.10)
     paperclip (3.5.1)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -151,12 +166,17 @@ GEM
     unicorn-rails (1.1.0)
       rack
       unicorn
+    uuidtools (2.1.4)
     will_paginate (3.0.4)
+    xml-simple (1.1.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-mysql-adapter
+  aws-s3
+  aws-sdk
   bcrypt-ruby (= 3.0.1)
   bootstrap-sass (= 2.3.2.2)
   bootstrap-will_paginate (= 0.0.9)
@@ -167,6 +187,7 @@ DEPENDENCIES
   foreman
   jbuilder (~> 1.2)
   jquery-rails
+  mysql2
   paperclip
   pg
   rails (= 4.0.0)

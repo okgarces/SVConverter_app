@@ -1,0 +1,7 @@
+development:
+  access_key_id: <%= ENV['AMAZON_IAM_ID'] %>
+  secret_access_key: <%= ENV['AMAZON_IAM_SECRET'] %>
+
+production:
+  access_key_id: <%= ENV['AMAZON_IAM_ID'] %>
+  secret_access_key: <%= ENV['AMAZON_IAM_SECRET'] %>
