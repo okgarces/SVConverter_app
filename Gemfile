@@ -10,9 +10,10 @@ gem 'ffmpeg'
 gem 'delayed_job_active_record'
 gem 'delayed_job_web'
 
+#Manejo de cache con Dalli
+gem 'dalli'
 
 # Use sqlite3 as the database for Active Record
-
 # Se debe instalar sudo apt-get install libmysqlclient-dev
 gem 'activerecord-mysql-adapter'
 gem 'mysql2'
