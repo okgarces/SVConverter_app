@@ -4,19 +4,12 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-  #adapter: mysql2
-  #host: <%= ENV['AMAZON_RDS_HOST'] %>
-  #database: <%= ENV['AMAZON_RDS_DATABASE'] %>
-  #timeout: 5000
-  #username: <%= ENV['AMAZON_RDS_USERNAME'] %>
-  #password: <%= ENV['AMAZON_RDS_PASS'] %>
-  #port: 3306
   adapter: mysql2
-  encoding: utf8
-  database: cloud
-  username: root
-  password: cloud
-  host: 127.0.0.1
+  host: <%= ENV['AMAZON_RDS_HOST'] %>
+  database: <%= ENV['AMAZON_RDS_DATABASE'] %>
+  timeout: 5000
+  username: <%= ENV['AMAZON_RDS_USERNAME'] %>
+  password: <%= ENV['AMAZON_RDS_PASS'] %>
   port: 3306
 
 # Warning: The database defined as "test" will be erased and
