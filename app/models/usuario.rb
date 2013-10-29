@@ -17,16 +17,17 @@ class Usuario < AWS::Record::HashModel
   index :remember_token
 
   before_save {self.email = email.downcase}
-	
+  #before_create {validarpassword}
+
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 	validates :nombre, presence: true
 	validates :apellido, presence: true
 	validates :email, presence: true, format: {with: VALID_EMAIL_REGEX}
 	has_secure_password 
-    validates :password, length: {minimum: 8}
+#Tocó eliminar esta parte ya que no actualizaban los campos en DynamoDB, el problema puede ser por la gema DynamoID
+  validates_length_of :password, :minimum => 8, :allow_blank => true
 	has_many :videos, dependent: :destroy
 
-	
 	 private
     # Use callbacks to share common setup or constraints between actions.
     def set_usuario

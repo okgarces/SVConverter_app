@@ -48,7 +48,7 @@ class UsuariosController < ApplicationController
   # PATCH/PUT /usuarios/1
   # PATCH/PUT /usuarios/1.json
   def update
-    @usuario = Usuario.find(param[:id])
+    @usuario = Usuario.find(params[:id])
     respond_to do |format|
       if @usuario.update(usuario_params)
         flash[:success] = "Perfil correctamente actualizado"
