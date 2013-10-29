@@ -1,1 +1,486 @@
 
+[AWS DynamoDB 200 0.643645 0 retries] list_tables()  
+
+(649.82 ms) LIST TABLES - [[]]
+(651.43 ms) CACHE TABLES
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-29 11:22:17 -0500
+Processing by StaticPagesController#home as HTML
+Queries without an index are forced to use scan and are generally much slower than indexed queries!
+You can index this query by adding this to video.rb: index [:[:Usuario_ids, {:type=>:set}], :[:attach_content_type, {:type=>:string}], :[:attach_file_name, {:type=>:string}], :[:attach_file_size, {:type=>:integer}], :[:attach_updated_at, {:type=>:datetime}], :[:created_at, {:type=>:string}], :[:estado, {:type=>:integer}], :[:fecha_publicado, {:type=>:string}], :[:id, {:type=>:string}], :[:mensaje, {:type=>:string}], :[:nombre, {:type=>:string}], :[:updated_at, {:type=>:string}], :[:usuario_id, {:type=>:string}]]
+[AWS DynamoDB 200 0.637261 0 retries] describe_table(:table_name=>"dev_Videos")  
+
+(639.34 ms) SCAN - ["dev_Videos", {:estado=>1}]
+[AWS DynamoDB 200 0.158869 0 retries] scan(:scan_filter=>{"estado"=>{:attribute_value_list=>[{:n=>"1"}],:comparison_operator=>"EQ"}},:table_name=>"dev_Videos")  
+
+[AWS DynamoDB 200 0.458547 0 retries] describe_table(:table_name=>"dev_Usuarios")  
+
+[AWS DynamoDB 200 0.162393 0 retries] get_item(:key=>{:hash_key_element=>{:s=>"fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213"}},:table_name=>"dev_Usuarios")  
+
+(626.6 ms) GET ITEM - [["dev_Usuarios", "fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213", {}]]
+[AWS DynamoDB 200 0.163734 0 retries] get_item(:key=>{:hash_key_element=>{:s=>"fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213"}},:table_name=>"dev_Usuarios")  
+
+(164.89 ms) GET ITEM - [["dev_Usuarios", "fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213", {}]]
+  Rendered videos/_video.html.erb (850.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (867.6ms)
+Dalli::Server#connect cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211
+cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211 failed (count: 0)
+Session::DalliStore#get: No server available
+[AWS DynamoDB 200 0.163212 0 retries] describe_table(:table_name=>"dev_index_Usuario_remember_tokens")  
+
+[AWS DynamoDB 200 0.159916 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"381c8f6d95c894f7861d524848a124ef8cda9e27"}},:table_name=>"dev_index_Usuario_remember_tokens")  
+
+(326.62 ms) GET ITEM - [["dev_index_Usuario_remember_tokens", "381c8f6d95c894f7861d524848a124ef8cda9e27", {:consistent_read=>false}]]
+[AWS DynamoDB 200 0.152497 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213"}},:table_name=>"dev_Usuarios")  
+
+(153.25 ms) GET ITEM - [["dev_Usuarios", "fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213", {:consistent_read=>false}]]
+  Rendered layouts/_header.html.erb (483.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 3531ms (Views: 2468.9ms)
+Dalli::Server#connect cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211
+cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211 failed (count: 1)
+cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211 is down
+Session::DalliStore#set: No server available
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:20 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/jwplayer/jwplayer.html5.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/jwplayer/jwplayer.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:21 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:22 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:22 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:22 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:22 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:22 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:22 -0500
+
+
+Started GET "/assets/jwplayer/jwplayer.html5.js" for 127.0.0.1 at 2013-10-29 11:22:22 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-29 11:22:52 -0500
+Processing by StaticPagesController#home as HTML
+Queries without an index are forced to use scan and are generally much slower than indexed queries!
+You can index this query by adding this to video.rb: index [:[:Usuario_ids, {:type=>:set}], :[:attach_content_type, {:type=>:string}], :[:attach_file_name, {:type=>:string}], :[:attach_file_size, {:type=>:integer}], :[:attach_updated_at, {:type=>:datetime}], :[:created_at, {:type=>:string}], :[:estado, {:type=>:integer}], :[:fecha_publicado, {:type=>:string}], :[:id, {:type=>:string}], :[:mensaje, {:type=>:string}], :[:nombre, {:type=>:string}], :[:updated_at, {:type=>:string}], :[:usuario_id, {:type=>:string}]]
+(0.02 ms) SCAN - ["dev_Videos", {:estado=>1}]
+[AWS DynamoDB 200 0.431445 0 retries] scan(:scan_filter=>{:estado=>{:attribute_value_list=>[{:n=>"1"}],:comparison_operator=>"EQ"}},:table_name=>"dev_Videos")  
+
+[AWS DynamoDB 200 0.157678 0 retries] get_item(:key=>{:hash_key_element=>{:s=>"fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213"}},:table_name=>"dev_Usuarios")  
+
+(161.94 ms) GET ITEM - [["dev_Usuarios", "fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213", {}]]
+[AWS DynamoDB 200 0.155694 0 retries] get_item(:key=>{:hash_key_element=>{:s=>"fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213"}},:table_name=>"dev_Usuarios")  
+
+(156.55 ms) GET ITEM - [["dev_Usuarios", "fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213", {}]]
+  Rendered videos/_video.html.erb (331.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (345.9ms)
+Dalli::Server#connect cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211
+cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211 failed (count: 2)
+cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211 is still down (for 32.370 seconds now)
+Session::DalliStore#get: No server available
+[AWS DynamoDB 200 0.188785 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"381c8f6d95c894f7861d524848a124ef8cda9e27"}},:table_name=>"dev_index_Usuario_remember_tokens")  
+
+(189.57 ms) GET ITEM - [["dev_index_Usuario_remember_tokens", "381c8f6d95c894f7861d524848a124ef8cda9e27", {:consistent_read=>false}]]
+[AWS DynamoDB 200 0.154667 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213"}},:table_name=>"dev_Usuarios")  
+
+(155.28 ms) GET ITEM - [["dev_Usuarios", "fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213", {:consistent_read=>false}]]
+  Rendered layouts/_header.html.erb (350.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1369ms (Views: 931.1ms)
+down_retry_delay not reached for cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211 (0.646 seconds left)
+Session::DalliStore#set: No server available
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:53 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/jwplayer/jwplayer.html5.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/jwplayer/jwplayer.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started GET "/assets/jwplayer/jwplayer.html5.js" for 127.0.0.1 at 2013-10-29 11:22:54 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2013-10-29 11:23:00 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"p+O+arhRB9UVs9+qG60EI4+h3f9I7sR89N6F4vmc3Lk="}
+Dalli::Server#connect cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211
+cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211 failed (count: 3)
+cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211 is still down (for 39.625 seconds now)
+Session::DalliStore#get: No server available
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 21ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.0.0) lib/action_controller/metal/request_forgery_protection.rb:163:in `handle_unverified_request'
+  actionpack (4.0.0) lib/action_controller/metal/request_forgery_protection.rb:170:in `handle_unverified_request'
+  actionpack (4.0.0) lib/action_controller/metal/request_forgery_protection.rb:177:in `verify_authenticity_token'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:377:in `_run__127878977__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__762448736__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.6.3) lib/unicorn/http_server.rb:552:in `process_client'
+  unicorn (4.6.3) lib/unicorn/http_server.rb:632:in `worker_loop'
+  unicorn (4.6.3) lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+  unicorn (4.6.3) lib/unicorn/http_server.rb:142:in `start'
+  unicorn-rails (1.1.0) lib/unicorn/rails.rb:24:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (130.0ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (195.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-29 11:23:10 -0500
+Processing by StaticPagesController#home as HTML
+Queries without an index are forced to use scan and are generally much slower than indexed queries!
+You can index this query by adding this to video.rb: index [:[:Usuario_ids, {:type=>:set}], :[:attach_content_type, {:type=>:string}], :[:attach_file_name, {:type=>:string}], :[:attach_file_size, {:type=>:integer}], :[:attach_updated_at, {:type=>:datetime}], :[:created_at, {:type=>:string}], :[:estado, {:type=>:integer}], :[:fecha_publicado, {:type=>:string}], :[:id, {:type=>:string}], :[:mensaje, {:type=>:string}], :[:nombre, {:type=>:string}], :[:updated_at, {:type=>:string}], :[:usuario_id, {:type=>:string}]]
+(0.02 ms) SCAN - ["dev_Videos", {:estado=>1}]
+[AWS DynamoDB 200 5.42315 0 retries] scan(:scan_filter=>{:estado=>{:attribute_value_list=>[{:n=>"1"}],:comparison_operator=>"EQ"}},:table_name=>"dev_Videos")  
+
+[AWS DynamoDB 200 0.158891 0 retries] get_item(:key=>{:hash_key_element=>{:s=>"fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213"}},:table_name=>"dev_Usuarios")  
+
+(165.84 ms) GET ITEM - [["dev_Usuarios", "fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213", {}]]
+[AWS DynamoDB 200 0.167401 0 retries] get_item(:key=>{:hash_key_element=>{:s=>"fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213"}},:table_name=>"dev_Usuarios")  
+
+(168.08 ms) GET ITEM - [["dev_Usuarios", "fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213", {}]]
+  Rendered videos/_video.html.erb (344.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (354.3ms)
+Dalli::Server#connect cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211
+cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211 failed (count: 4)
+cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211 is still down (for 55.344 seconds now)
+Session::DalliStore#get: No server available
+[AWS DynamoDB 200 0.157345 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"381c8f6d95c894f7861d524848a124ef8cda9e27"}},:table_name=>"dev_index_Usuario_remember_tokens")  
+
+(157.93 ms) GET ITEM - [["dev_index_Usuario_remember_tokens", "381c8f6d95c894f7861d524848a124ef8cda9e27", {:consistent_read=>false}]]
+[AWS DynamoDB 200 0.15662 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213"}},:table_name=>"dev_Usuarios")  
+
+(157.18 ms) GET ITEM - [["dev_Usuarios", "fa2bfe27-8a3f-498b-8ac0-1c0b32d7f213", {:consistent_read=>false}]]
+  Rendered layouts/_header.html.erb (317.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 6153ms (Views: 724.9ms)
+down_retry_delay not reached for cloudsession.n9rvzs.cfg.use1.cache.amazonaws.com:11211 (0.680 seconds left)
+Session::DalliStore#set: No server available
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:16 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:17 -0500
+
+
+Started GET "/assets/jwplayer/jwplayer.html5.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:17 -0500
+
+
+Started GET "/assets/jwplayer/jwplayer.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:17 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:17 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:17 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:17 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 11:23:17 -0500
+
+
+Started GET "/assets/jwplayer/jwplayer.html5.js" for 127.0.0.1 at 2013-10-29 11:23:17 -0500
