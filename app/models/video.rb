@@ -1,5 +1,23 @@
-class Video < ActiveRecord::Base
+class Video < AWS::Record::HashModel
 	
+	include Dynamoid::Document
+  	include Dynamoid::Paperclip
+
+  	table :name => :Videos, :key => :id, :read_capacity => 400, :write_capacity => 400
+
+  	field :nombre
+  	field :usuario_id
+    field :mensaje
+    field :estado, :integer
+    field :fecha_publicado
+    field :created_at
+    field :updated_at
+    field :attach_file_name
+    field :attach_content_type
+    field :attach_file_size
+    field :attach_updated_at
+    field :nombre
+
 	# States
 	STATE_PROCESSING = 0
 	STATE_CONVERTED = 1
@@ -7,18 +25,18 @@ class Video < ActiveRecord::Base
 	# Once the video is uploaded the state must be SET and
 	# the 
 	before_create { self.estado = STATE_PROCESSING } 
-	after_save { convert_video }
+	after_create { convert_video }
 
 
 	# Model configurations
 	belongs_to :Usuario
-	default_scope -> { order('attach_updated_at DESC')}
+	#default_scope -> { order('attach_updated_at DESC')}
 	
-	validates :usuario_id, presence: true
+	#validates :usuario_id, presence: true
 	validates :mensaje, presence: true
 	
 	# For the use of gem Paperclip
-	has_attached_file :attach, :storage => :s3, :s3_credentials => "#{Rails.root}/config/aws.yml", :bucket => "SVConverter"
+	has_dynamoid_attached_file :attach, :storage => :s3, :s3_credentials => "#{Rails.root}/config/aws.yml", :bucket => "SVConverter"
 	validates_attachment_presence :attach
 	#validates_attachment_content_type :attach, :content_type => ['movie/quicktime','movie/avi','movie/mpg']
 
@@ -39,10 +57,14 @@ class Video < ActiveRecord::Base
 	end
 
 	def convert_video
-		self.delay.process_video    
+		#Aquí va el código para colocar en la cola los mensajes
+		@sqs = AWS::SQS.new
+		@queue = @sqs.queues.create("dev_svconverterqueue")
+		@queue.send_message(self.estado.to_s+";"+self.id+";")  
 
 	end
 	def process_video
+		#Esto lo vamos a crear como un rake
 		if self.estado == STATE_PROCESSING
 			video_url = self.attach.url(nil, false)
 			video_filename = self.attach.original_filename

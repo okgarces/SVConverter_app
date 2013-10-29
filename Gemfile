@@ -7,23 +7,26 @@ gem 'rails', '4.0.0'
 gem 'ffmpeg'
 
 # Delayed Jobs!
-gem 'delayed_job_active_record'
-gem 'delayed_job_web'
+#gem 'delayed_job_active_record'
+#gem 'delayed_job_web'
 
 
 # Use sqlite3 as the database for Active Record
 
 # Se debe instalar sudo apt-get install libmysqlclient-dev
-gem 'activerecord-mysql-adapter'
-gem 'mysql2'
+# gem 'activerecord-mysql-adapter'
+#gem 'mysql2'
 gem 'aws-s3'
 # Se debe instalar apt-get install libxslt-dev libxml2-dev
 gem 'aws-sdk'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
-gem 'paperclip'
+gem 'dynamoid-paperclip'
 gem 'foreman'
+gem 'dynamoid'
+gem 'sqlite3'
+gem 'aws-ses', :require => 'aws/ses'
 
 gem 'therubyracer', :require => 'v8'
 

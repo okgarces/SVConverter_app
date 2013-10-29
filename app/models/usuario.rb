@@ -1,13 +1,31 @@
-class Usuario < ActiveRecord::Base
-	before_save {self.email = email.downcase}
+class Usuario < AWS::Record::HashModel
+	
+  include Dynamoid::Document
+  include ActiveModel::SecurePassword
+
+  table :name => :Usuarios, :key => :id, :read_capacity => 5, :write_capacity => 5
+
+  field :id
+  field :nombre
+  field :apellido
+  field :email
+  field :password_digest
+  field :created_at
+  field :updated_at
+  field :remember_token
+
+  index :remember_token
+
+  before_save {self.email = email.downcase}
 	
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 	validates :nombre, presence: true
 	validates :apellido, presence: true
 	validates :email, presence: true, format: {with: VALID_EMAIL_REGEX}
-	has_secure_password
-		validates :password, length: {minimum: 8}
+	has_secure_password 
+    validates :password, length: {minimum: 8}
 	has_many :videos, dependent: :destroy
+
 	
 	 private
     # Use callbacks to share common setup or constraints between actions.
@@ -26,6 +44,10 @@ class Usuario < ActiveRecord::Base
 
     def Usuario.encrypt(token)
       Digest::SHA1.hexdigest(token.to_s)
+    end
+
+    def Usuario.password_digest(password)
+      Digest::SHA1.hexdigest(password)
     end
 
     private 

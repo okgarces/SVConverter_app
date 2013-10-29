@@ -6,12 +6,10 @@
 
 	<h3> Postear un Video </h3>
 	<%= link_to "Subir Video!", new_video_path, class: 'btn btn-large btn-primary' %> <br>
-
 <br>
-	<% if @usuario.videos.any? %>
+	<% if @videos.any? %>
 		<h3> Videos </h3>
 			<%= render @videos %>
-		<%= will_paginate @videos %>
 	<% end %>
 
 

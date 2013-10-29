@@ -13,12 +13,13 @@ class UsuariosController < ApplicationController
   # GET /usuarios/1.json
   def show
     @usuario = Usuario.find(params[:id])
-    @videos = @usuario.videos.paginate(page: params[:page], per_page: 30, order: 'attach_updated_at DESC')
+    #@videos = @usuario.videos.paginate(page: params[:page], per_page: 30, order: 'attach_updated_at DESC')
+    @videos = Video.where(:usuario_id => @usuario.id).all.sort_by{|e| e[:attach_updated_at]}.reverse
   end
 
   # GET /usuarios/new
   def new
-    @usuario = Usuario.new
+    @usuario = Usuario.build
   end
 
   # GET /usuarios/1/edit
@@ -29,7 +30,7 @@ class UsuariosController < ApplicationController
   # POST /usuarios
   # POST /usuarios.json
   def create
-    @usuario = Usuario.new(usuario_params)
+    @usuario = Usuario.create(usuario_params)
 
     respond_to do |format|
       if @usuario.save

@@ -27,19 +27,19 @@ ActiveRecord::Schema.define(version: 20130906193910) do
     t.datetime "updated_at"
   end
 
-  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
+  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority"
 
   create_table "usuarios", force: true do |t|
     t.string   "nombre"
     t.string   "apellido"
     t.string   "email"
-    t.string   "password_digest"
+    t.string   "passwd"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "remember_token"
   end
 
-  add_index "usuarios", ["remember_token"], name: "index_usuarios_on_remember_token", using: :btree
+  add_index "usuarios", ["remember_token"], name: "index_usuarios_on_remember_token"
 
   create_table "videos", force: true do |t|
     t.integer  "usuario_id"

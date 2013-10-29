@@ -24,7 +24,9 @@ class VideosController < ApplicationController
   # POST /videos
   # POST /videos.json
   def create
-    @video = current_user.videos.build(video_params)
+    # Esta solución no es viable con la versión de Dynamoid 0.7.1
+    @video = current_user.videos.create(video_params)
+    @video.usuario_id = current_user.id
     respond_to do |format|
       if @video.save
         flash[:success] = "El video ha sido posteado, pasarán unos segundos para ser publicado"
