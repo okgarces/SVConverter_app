@@ -77,4 +77,7 @@ SVConverterApp::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  require 'active_support/cache/dalli_store'
+  config.cache_store = :dalli_store
 end
