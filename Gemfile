@@ -25,7 +25,6 @@ gem 'bootstrap-will_paginate', '0.0.9'
 gem 'dynamoid-paperclip'
 gem 'foreman'
 gem 'dynamoid'
-gem 'sqlite3'
 gem 'aws-ses', :require => 'aws/ses'
 
 gem 'therubyracer', :require => 'v8'
