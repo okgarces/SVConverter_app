@@ -57,6 +57,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    dalli (2.6.4)
     dotenv (0.9.0)
     dynamoid (0.7.1)
       activemodel
@@ -171,6 +172,7 @@ DEPENDENCIES
   bootstrap-sass (= 2.3.2.2)
   bootstrap-will_paginate (= 0.0.9)
   coffee-rails (~> 4.0.0)
+  dalli
   dynamoid
   dynamoid-paperclip
   ffmpeg

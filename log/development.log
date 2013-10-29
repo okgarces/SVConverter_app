@@ -4952,3 +4952,7 @@ You can index this query by adding this to video.rb: index [:[:Usuario_ids, {:ty
   Rendered layouts/_header.html.erb (337.6ms)
   Rendered layouts/_footer.html.erb (0.2ms)
 Completed 200 OK in 951ms (Views: 715.1ms)
+[AWS DynamoDB 200 0.531307 0 retries] list_tables()  
+
+(539.0 ms) LIST TABLES - [[]]
+(539.19 ms) CACHE TABLES
