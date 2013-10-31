@@ -2,20 +2,27 @@
 <div class="content">
 <div class="row">
 <div class="span6">
+
 	<% if video.converted? %>
+
     <div id="myElement<%= video.id %>">Loading the player...</div>
     	<script type="text/javascript">
         	jwplayer("myElement<%= video.id %>").setup({
-            file: "<%= video.attach.url %>",
+            file: "rtmp://s3mak58onym7kp.cloudfront.net/cfx/st/mp4:<%= video.attach.url[36,video.attach.url.size] %>",
             width: 420,
             height: 280,
-            title: "<%= video.mensaje %>"
+            title: "<%= video.mensaje %>",
+             rtmp: {
+        		bufferlength: 0.1
+    			}		
             });
             </script>
          <%else%>
             <img src= "/loading.gif" width="420" height="280">
         <% end %>
-    </div>
+    </div> 
+
+
  	<div class="span4">
 			<span class="content">
 				<b>Nombre:</b> <%= video.nombre %><br>

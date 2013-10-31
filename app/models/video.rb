@@ -36,7 +36,7 @@ class Video < AWS::Record::HashModel
 	validates :mensaje, presence: true
 	
 	# For the use of gem Paperclip
-	has_dynamoid_attached_file :attach, :storage => :s3, :s3_credentials => "#{Rails.root}/config/aws.yml", :bucket => "SVConverter"
+	has_dynamoid_attached_file :attach, :storage => :s3, :s3_credentials => "#{Rails.root}/config/aws.yml", :bucket => "svconverter"
 	validates_attachment_presence :attach
 	#validates_attachment_content_type :attach, :content_type => ['movie/quicktime','movie/avi','movie/mpg']
 
