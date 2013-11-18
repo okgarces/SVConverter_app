@@ -26,12 +26,13 @@ while 0==0 do
 
 			#movie = FFMPEG::Movie.new(video_url)
 		    #options = {video_codec: "libx264"}
-		    puts exec "#{Rails.root}/bin/ffmpeg -y -i "+ video_url + " -vcodec libx264 -strict experimental #{Rails.root}/tmp/videos/"+ video_filename[0,video_filename.size-4]+".mp4"
+		    puts exec "#{Rails.root}/bin/ffmpeg -y -i "+ video_url + " -vcodec libx264 -strict experimental #{Rails.root}/tmp/videos/"+ video_filename[0,video_filename.size-4]+".mp4_#{Process.pid}"
 		   	#video_converted_url = "#{Rails.root}/tmp/converted_#{UUIDTools::UUID.random_create.hexdigest}_"+video_filename[0,video_filename.size-4]+'.mp4'
 			#puts 'Converted url: '+video_converted_url
 			#movie.transcode(video_converted_url, options)
 			#converted = File.open(video_converted_url)
-			video_converted_url = "#{Rails.root}/tmp/videos/"+ video_filename[0,video_filename.size-4]+".mp4"
+			puts exec "ls -al"
+			video_converted_url = "#{Rails.root}/tmp/videos/"+ video_filename[0,video_filename.size-4]+".mp4_#{Process.pid}"
 			converted = File.open(video_converted_url)
 			video.attach = converted
 			converted.close
