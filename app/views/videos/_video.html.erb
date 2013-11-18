@@ -5,18 +5,11 @@
 
 	<% if video.converted? %>
 
-    <div id="myElement<%= video.id %>">Loading the player...</div>
-    	<script type="text/javascript">
-        	jwplayer("myElement<%= video.id %>").setup({
-            file: "<%= video.attach.url%>",
-            width: 420,
-            height: 280,
-            title: "<%= video.mensaje %>",
-             rtmp: {
-        		bufferlength: 0.1
-    			}		
-            });
-            </script>
+	<video id="myElement<%= video.id %>" class="video-js vjs-default-skin vjs"
+	controls preload="auto" width="420" height="280"
+	data-setup='{"example_option":true}'>
+	<source src="<%= video.attach.url%>" type='video/mp4' />
+	</video>
          <%else%>
             <img src= "/loading.gif" width="420" height="280">
         <% end %>

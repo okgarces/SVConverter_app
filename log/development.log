@@ -5396,3 +5396,1131 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 15:00:21
 
 
 Started GET "/assets/jwplayer/jwplayer.html5.js" for 127.0.0.1 at 2013-11-18 15:00:21 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 15:20:04 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3963ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=videos selector={"estado"=>1} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5056ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"_id"=>BSON::ObjectId('52817a966d616351ca020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5145ms
+  Rendered videos/_video.html.erb (4459.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (4462.4ms)
+Dalli::Server#connect mc4.dev.ec2.memcachier.com:11211
+mc4.dev.ec2.memcachier.com:11211 failed (count: 2)
+mc4.dev.ec2.memcachier.com:11211 is still down (for 1190.038 seconds now)
+Session::DalliStore#get: No server available
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"$query"=>{"remember_token"=>"433aee27c1ee2a94c6bb5b320d9a501208f2d69e"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7356ms
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 6412ms (Views: 6408.6ms)
+down_retry_delay not reached for mc4.dev.ec2.memcachier.com:11211 (0.992 seconds left)
+Session::DalliStore#set: No server available
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:10 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/video-js/video.dev.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/video-js/video.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 15:20:11 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 15:21:56 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=videos selector={"estado"=>1} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6241ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"_id"=>BSON::ObjectId('52817a966d616351ca020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6540ms
+  Rendered videos/_video.html.erb (3673.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (3745.9ms)
+Dalli::Server#connect mc4.dev.ec2.memcachier.com:11211
+mc4.dev.ec2.memcachier.com:11211 failed (count: 3)
+mc4.dev.ec2.memcachier.com:11211 is still down (for 1300.953 seconds now)
+Session::DalliStore#get: No server available
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"$query"=>{"remember_token"=>"433aee27c1ee2a94c6bb5b320d9a501208f2d69e"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5631ms
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 5407ms (Views: 5404.0ms)
+down_retry_delay not reached for mc4.dev.ec2.memcachier.com:11211 (0.993 seconds left)
+Session::DalliStore#set: No server available
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/video-js.css?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/video-js.min.css?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:01 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+
+Started GET "/assets/video-js/video.dev.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+
+Started GET "/assets/font/vjs.woff" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/font/vjs.woff"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn-rails (1.1.0) lib/unicorn/rails.rb:24:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (107.6ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (168.9ms)
+
+
+Started GET "/assets/font/vjs.ttf" for 127.0.0.1 at 2013-11-18 15:22:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/font/vjs.ttf"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn-rails (1.1.0) lib/unicorn/rails.rb:24:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (61.2ms)
+
+
+Started GET "/assets/video-js.css?body=1" for 127.0.0.1 at 2013-11-18 15:24:29 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 15:24:49 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=videos selector={"estado"=>1} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.7733ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"_id"=>BSON::ObjectId('52817a966d616351ca020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5098ms
+  Rendered videos/_video.html.erb (4627.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (4628.8ms)
+Dalli::Server#connect mc4.dev.ec2.memcachier.com:11211
+mc4.dev.ec2.memcachier.com:11211 failed (count: 4)
+mc4.dev.ec2.memcachier.com:11211 is still down (for 1475.141 seconds now)
+Session::DalliStore#get: No server available
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"$query"=>{"remember_token"=>"433aee27c1ee2a94c6bb5b320d9a501208f2d69e"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8823ms
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 6309ms (Views: 6304.5ms)
+down_retry_delay not reached for mc4.dev.ec2.memcachier.com:11211 (0.992 seconds left)
+Session::DalliStore#set: No server available
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-18 15:24:55 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-11-18 15:24:55 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/video-js.css?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/video-js.min.css?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/video-js/video.dev.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/video-js/video.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 15:24:56 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 15:25:21 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4321ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=videos selector={"estado"=>1} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8407ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"_id"=>BSON::ObjectId('52817a966d616351ca020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6207ms
+  Rendered videos/_video.html.erb (4850.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (4856.0ms)
+Dalli::Server#connect mc4.dev.ec2.memcachier.com:11211
+mc4.dev.ec2.memcachier.com:11211 failed (count: 5)
+mc4.dev.ec2.memcachier.com:11211 is still down (for 1506.964 seconds now)
+Session::DalliStore#get: No server available
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"$query"=>{"remember_token"=>"433aee27c1ee2a94c6bb5b320d9a501208f2d69e"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7560ms
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 6465ms (Views: 6458.0ms)
+down_retry_delay not reached for mc4.dev.ec2.memcachier.com:11211 (0.992 seconds left)
+Session::DalliStore#set: No server available
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/video-js.css?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/video-js.min.css?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:27 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/video-js/video.dev.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/video-js/video.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 15:25:28 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 15:27:33 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=videos selector={"estado"=>1} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.7750ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"_id"=>BSON::ObjectId('52817a966d616351ca020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.6056ms
+  Rendered videos/_video.html.erb (6709.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (6714.3ms)
+Dalli::Server#connect mc4.dev.ec2.memcachier.com:11211
+mc4.dev.ec2.memcachier.com:11211 failed (count: 6)
+mc4.dev.ec2.memcachier.com:11211 is still down (for 1640.859 seconds now)
+Session::DalliStore#get: No server available
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"$query"=>{"remember_token"=>"433aee27c1ee2a94c6bb5b320d9a501208f2d69e"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7708ms
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 8291ms (Views: 8288.2ms)
+down_retry_delay not reached for mc4.dev.ec2.memcachier.com:11211 (0.992 seconds left)
+Session::DalliStore#set: No server available
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/video-js.css?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/video-js.min.css?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:41 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:42 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:42 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:42 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:42 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:42 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:42 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:42 -0500
+
+
+Started GET "/assets/video-js/video.dev.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:42 -0500
+
+
+Started GET "/assets/video-js/video.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:42 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 15:27:42 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 15:30:14 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=videos selector={"estado"=>1} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6797ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"_id"=>BSON::ObjectId('52817a966d616351ca020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0698ms
+  Rendered videos/_video.html.erb (4843.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (4845.2ms)
+Dalli::Server#connect mc4.dev.ec2.memcachier.com:11211
+mc4.dev.ec2.memcachier.com:11211 failed (count: 7)
+mc4.dev.ec2.memcachier.com:11211 is still down (for 1800.743 seconds now)
+Session::DalliStore#get: No server available
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1414ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"$query"=>{"remember_token"=>"433aee27c1ee2a94c6bb5b320d9a501208f2d69e"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5880ms
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 6539ms (Views: 6535.9ms)
+down_retry_delay not reached for mc4.dev.ec2.memcachier.com:11211 (0.987 seconds left)
+Session::DalliStore#set: No server available
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/video-js.css?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/video-js.min.css?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:21 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:22 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:22 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:22 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:22 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:22 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:22 -0500
+
+
+Started GET "/assets/video-js/video.dev.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:22 -0500
+
+
+Started GET "/assets/video-js/video.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:22 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 15:30:22 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 15:30:56 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=videos selector={"estado"=>1} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7395ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"_id"=>BSON::ObjectId('52817a966d616351ca020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5265ms
+  Rendered videos/_video.html.erb (3357.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (3358.6ms)
+Dalli::Server#connect mc4.dev.ec2.memcachier.com:11211
+mc4.dev.ec2.memcachier.com:11211 failed (count: 8)
+mc4.dev.ec2.memcachier.com:11211 is still down (for 1840.641 seconds now)
+Session::DalliStore#get: No server available
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"$query"=>{"remember_token"=>"433aee27c1ee2a94c6bb5b320d9a501208f2d69e"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 2.3867ms
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 4945ms (Views: 4942.9ms)
+down_retry_delay not reached for mc4.dev.ec2.memcachier.com:11211 (0.990 seconds left)
+Session::DalliStore#set: No server available
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/video-js.css?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/video-js.min.css?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:01 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:02 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:02 -0500
+
+
+Started GET "/assets/video-js/video.dev.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:02 -0500
+
+
+Started GET "/assets/video-js/video.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:02 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 15:31:02 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 15:34:30 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=videos selector={"estado"=>1} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.5282ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"_id"=>BSON::ObjectId('52817a966d616351ca020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8384ms
+  Rendered videos/_video.html.erb (4891.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (4892.4ms)
+Dalli::Server#connect mc4.dev.ec2.memcachier.com:11211
+mc4.dev.ec2.memcachier.com:11211 failed (count: 9)
+mc4.dev.ec2.memcachier.com:11211 is still down (for 2056.599 seconds now)
+Session::DalliStore#get: No server available
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"$query"=>{"remember_token"=>"433aee27c1ee2a94c6bb5b320d9a501208f2d69e"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.3898ms
+  Rendered layouts/_header.html.erb (7.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 6634ms (Views: 6628.8ms)
+down_retry_delay not reached for mc4.dev.ec2.memcachier.com:11211 (0.986 seconds left)
+Session::DalliStore#set: No server available
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/video-js.css?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/video-js.min.css?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:37 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/assets/video-js/video.dev.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/assets/video-js/video.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 15:34:38 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 15:35:34 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6788ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=videos selector={"estado"=>1} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5911ms
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"_id"=>BSON::ObjectId('52817a966d616351ca020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5025ms
+  Rendered videos/_video.html.erb (4794.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (4795.5ms)
+Dalli::Server#connect mc4.dev.ec2.memcachier.com:11211
+mc4.dev.ec2.memcachier.com:11211 failed (count: 10)
+mc4.dev.ec2.memcachier.com:11211 is still down (for 2120.697 seconds now)
+Session::DalliStore#get: No server available
+  MOPED: 127.0.0.1:27017 QUERY        database=svconverter collection=usuarios selector={"$query"=>{"remember_token"=>"433aee27c1ee2a94c6bb5b320d9a501208f2d69e"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.5941ms
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 6435ms (Views: 6430.1ms)
+down_retry_delay not reached for mc4.dev.ec2.memcachier.com:11211 (0.988 seconds left)
+Session::DalliStore#set: No server available
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/video-js.css?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:41 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:42 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:42 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:42 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:42 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:42 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:42 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:42 -0500
+
+
+Started GET "/assets/video-js/video.dev.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:42 -0500
+
+
+Started GET "/assets/video-js/video.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:42 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 15:35:42 -0500
