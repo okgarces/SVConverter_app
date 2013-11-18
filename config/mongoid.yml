@@ -20,8 +20,8 @@ production:
             hosts: 
                 -   ds053218.mongolab.com:53218
             database: heroku_app19299671
-            username: heroku_app19299671
-            password: 563dde1688673d308faf49f4cba26541
+            username: svconverteruser
+            password: svconverter
     options:
         include_type_for_serialization: true
         preload_models:

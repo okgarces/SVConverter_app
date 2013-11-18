@@ -3175,3 +3175,309 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 04:05:42
 
 
 Started GET "/assets/jwplayer/jwplayer.html5.js" for 127.0.0.1 at 2013-11-18 04:05:43 -0500
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 54.204.233.236:53218 COMMAND      database=admin command={:ismaster=>1} runtime: 203.3142ms
+
+
+Started GET "/usuarios/52817a966d616351ca020000" for 127.0.0.1 at 2013-11-18 06:19:09 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"52817a966d616351ca020000"}
+  MOPED: 54.204.233.236:53218 COMMAND      database=heroku_app19299671 command={:getnonce=>1} runtime: 196.7381ms
+Completed 500 Internal Server Error in 303ms
+
+Moped::Errors::AuthenticationFailure (The operation: #<Moped::Protocol::Commands::Authenticate
+  @length=174
+  @request_id=3
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="heroku_app19299671.$cmd"
+  @skip=0
+  @limit=-1
+  @selector={:authenticate=>1, :user=>"heroku_app19299671", :nonce=>"85d7f6342c2211d2", :key=>"f8c780aa7ff373514863555e8997f68a"}
+  @fields=nil>
+failed with error 18: "auth fails"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+  app/controllers/usuarios_controller.rb:15:in `show'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (64.3ms)
+
+
+Started GET "/usuarios/52817a966d616351ca020000" for 127.0.0.1 at 2013-11-18 06:19:26 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"52817a966d616351ca020000"}
+  MOPED: 54.204.233.236:53218 COMMAND      database=heroku_app19299671 command={:getnonce=>1} runtime: 97.1328ms
+Completed 500 Internal Server Error in 195ms
+
+Moped::Errors::AuthenticationFailure (The operation: #<Moped::Protocol::Commands::Authenticate
+  @length=174
+  @request_id=5
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="heroku_app19299671.$cmd"
+  @skip=0
+  @limit=-1
+  @selector={:authenticate=>1, :user=>"heroku_app19299671", :nonce=>"7a95b10c28648fc4", :key=>"ab70ae6f058a2555735b5b8b00f05ef4"}
+  @fields=nil>
+failed with error 18: "auth fails"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+  app/controllers/usuarios_controller.rb:15:in `show'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 06:19:36 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 54.204.233.236:53218 COMMAND      database=heroku_app19299671 command={:getnonce=>1} runtime: 1284.2903ms
+Completed 500 Internal Server Error in 1391ms
+
+Moped::Errors::AuthenticationFailure (The operation: #<Moped::Protocol::Commands::Authenticate
+  @length=174
+  @request_id=7
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="heroku_app19299671.$cmd"
+  @skip=0
+  @limit=-1
+  @selector={:authenticate=>1, :user=>"heroku_app19299671", :nonce=>"61e16891382fbbb8", :key=>"3ab8059e91d416f1a51e489e3c44563a"}
+  @fields=nil>
+failed with error 18: "auth fails"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+  app/controllers/static_pages_controller.rb:4:in `sort_by'
+  app/controllers/static_pages_controller.rb:4:in `home'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.0ms)
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 54.204.233.236:53218 COMMAND      database=admin command={:ismaster=>1} runtime: 199.4146ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 06:21:32 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 54.204.233.236:53218 COMMAND      database=heroku_app19299671 command={:getnonce=>1} runtime: 204.2011ms
+Completed 500 Internal Server Error in 310ms
+
+Moped::Errors::AuthenticationFailure (The operation: #<Moped::Protocol::Commands::Authenticate
+  @length=174
+  @request_id=3
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="heroku_app19299671.$cmd"
+  @skip=0
+  @limit=-1
+  @selector={:authenticate=>1, :user=>"heroku_app19299671", :nonce=>"e49915a54c8398e3", :key=>"cdb33fdf409382386500a8058103749a"}
+  @fields=nil>
+failed with error 18: "auth fails"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+  app/controllers/static_pages_controller.rb:4:in `sort_by'
+  app/controllers/static_pages_controller.rb:4:in `home'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.8ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 06:25:52 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 54.204.233.236:53218 COMMAND      database=heroku_app19299671 command={:getnonce=>1} runtime: 99.4493ms
+Completed 500 Internal Server Error in 204ms
+
+Moped::Errors::AuthenticationFailure (The operation: #<Moped::Protocol::Commands::Authenticate
+  @length=174
+  @request_id=5
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="heroku_app19299671.$cmd"
+  @skip=0
+  @limit=-1
+  @selector={:authenticate=>1, :user=>"heroku_app19299671", :nonce=>"1e80f813e8543600", :key=>"4194e575de8cca6d393ed682ab09db0b"}
+  @fields=nil>
+failed with error 18: "auth fails"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+  app/controllers/static_pages_controller.rb:4:in `sort_by'
+  app/controllers/static_pages_controller.rb:4:in `home'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 06:25:57 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 54.204.233.236:53218 COMMAND      database=heroku_app19299671 command={:getnonce=>1} runtime: 102.3201ms
+Completed 500 Internal Server Error in 210ms
+
+Moped::Errors::AuthenticationFailure (The operation: #<Moped::Protocol::Commands::Authenticate
+  @length=174
+  @request_id=7
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="heroku_app19299671.$cmd"
+  @skip=0
+  @limit=-1
+  @selector={:authenticate=>1, :user=>"heroku_app19299671", :nonce=>"e280753b99c2966b", :key=>"729cdfae3568c8299957c9264a70ae6e"}
+  @fields=nil>
+failed with error 18: "auth fails"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+  app/controllers/static_pages_controller.rb:4:in `sort_by'
+  app/controllers/static_pages_controller.rb:4:in `home'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 54.204.233.236:53218 COMMAND      database=admin command={:ismaster=>1} runtime: 192.1267ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 06:26:13 -0500
+Processing by StaticPagesController#home as HTML
+  MOPED: 54.204.233.236:53218 COMMAND      database=heroku_app19299671 command={:getnonce=>1} runtime: 212.8010ms
+  MOPED: 54.204.233.236:53218 QUERY        database=heroku_app19299671 collection=videos selector={"estado"=>1} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 96.9679ms
+  Rendered collection (0.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (34.6ms)
+Dalli::Server#connect mc4.dev.ec2.memcachier.com:11211
+Dalli/SASL authenticating as 00e098
+Dalli/SASL: 00e098
+  MOPED: 54.204.233.236:53218 QUERY        database=heroku_app19299671 collection=usuarios selector={"$query"=>{"remember_token"=>"433aee27c1ee2a94c6bb5b320d9a501208f2d69e"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 157.0802ms
+  Rendered layouts/_header.html.erb (159.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 2404ms (Views: 1985.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/videos.css?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/jwplayer/jwplayer.html5.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/jwplayer/jwplayer.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 06:26:16 -0500
