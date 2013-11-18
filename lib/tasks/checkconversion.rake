@@ -32,7 +32,6 @@ while 0==0 do
 			#puts 'Converted url: '+video_converted_url
 			#movie.transcode(video_converted_url, options)
 			#converted = File.open(video_converted_url)
-			puts system "ls -al"
 			converted = File.open(video_converted_url)
 			video.attach = converted
 			converted.close
