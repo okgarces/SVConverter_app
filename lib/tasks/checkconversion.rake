@@ -27,7 +27,7 @@ while 0==0 do
 			#movie = FFMPEG::Movie.new(video_url)
 		    #options = {video_codec: "libx264"}
 		    video_converted_url = "#{Rails.root}/tmp/converted_#{rand(10241024)}_"+video_filename[0,video_filename.size-4]+'.mp4'
-		    puts exec "#{Rails.root}/bin/ffmpeg -i "+ video_url + " -vcodec libx264 -strict experimental " +video_converted_url
+		    puts exec "#{Rails.root}/bin/ffmpeg -i "+ video_url + " -vcodec libx264 " +video_converted_url
 		   	
 			#puts 'Converted url: '+video_converted_url
 			#movie.transcode(video_converted_url, options)
