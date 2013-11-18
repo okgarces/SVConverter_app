@@ -34,6 +34,7 @@ while 0==0 do
 			video.fecha_publicado = Time.zone.now
 			video.save
 			@msg.delete
+			enviaremail 'Video publicado', Usuario.find(video.usuario_id).email, 'El video: '+video.attach.original_filename+' ha sido publicado exitosamente' 
 		end
 	end
 end
