@@ -24,7 +24,7 @@ while 0==0 do
 			puts video.attach.url.to_s + video.attach.original_filename
 			video_filename = video.attach.original_filename
 		    video_converted_url = "#{Rails.root}/tmp/converted_#{rand(10241024)}_"+video_filename[0,video_filename.size-4]+'.mp4'
-		    puts exec "#{Rails.root}/bin/ffmpeg -y -i "+ video_url + " -vcodec libx264 " +video_converted_url
+		    puts system "#{Rails.root}/bin/ffmpeg -y -i "+ video_url + " -vcodec libx264 " +video_converted_url
 		    converted = File.open(video_converted_url)
 			puts converted
 			video.attach = converted
