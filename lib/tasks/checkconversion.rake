@@ -31,7 +31,7 @@ while 0==0 do
 			#puts 'Converted url: '+video_converted_url
 			#movie.transcode(video_converted_url, options)
 			#converted = File.open(video_converted_url)
-			video_converted_url = "#{Rails.root}/tmp/system/temp/videos/"+ video_filename[0,video_filename.size-4]+".mp4"
+			video_converted_url = "#{Rails.root}/tmp/videos/"+ video_filename[0,video_filename.size-4]+".mp4"
 			converted = File.open(video_converted_url)
 			video.attach = converted
 			converted.close
