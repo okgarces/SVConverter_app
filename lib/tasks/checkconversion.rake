@@ -38,6 +38,7 @@ while 0==0 do
 		end
 	end
 end
+end
 
 def enviaremail(subject, email, body)
 
