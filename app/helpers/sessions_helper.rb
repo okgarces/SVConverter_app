@@ -4,8 +4,11 @@ module SessionsHelper
 		cookies.permanent[:remember_token] = remember_token
 		user.remember_token=Usuario.encrypt(remember_token)
 		user.save!
-		#user.update_attribute(:remember_token, Usuario.encrypt(remember_token))
+
+		Rails.logger.info("Token actual" + remember_token)
+		#user.update_attribute!(:remember_token, Usuario.encrypt(remember_token))
 		self.current_user= user
+		Rails.logger.info("Token del usuario: " + self.current_user.remember_token)
 	end
 
 
@@ -15,7 +18,7 @@ module SessionsHelper
 	end
 	def current_user
 		remember_token = Usuario.encrypt(cookies[:remember_token])
-		@current_user ||= Usuario.find_by_remember_token(remember_token)
+		@current_user ||= Usuario.find_by({'remember_token' => remember_token})
 	end
 	def current_user?(user)
 		user==current_user

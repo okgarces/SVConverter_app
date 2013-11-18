@@ -28,5 +28,12 @@ SVConverterApp::Application.configure do
   config.assets.debug = true
 
   require 'active_support/cache/dalli_store'
-  config.cache_store = :dalli_store
+  config.cache_store = :dalli_store,
+                    ('mc4.dev.ec2.memcachier.com:11211'),
+                    {:username => "00e098",
+                     :password => "c618f81362",
+                     :failover => true,
+                     :socket_timeout => 1.5,
+                     :socket_failure_delay => 0.2
+                    }
 end

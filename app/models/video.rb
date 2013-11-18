@@ -1,14 +1,11 @@
-class Video < AWS::Record::HashModel
-	
-	include Dynamoid::Document
-  	include Dynamoid::Paperclip
-
-  	table :name => :Videos, :key => :id, :read_capacity => 400, :write_capacity => 400
+class Video
+	include Mongoid::Document
+	include Mongoid::Paperclip
 
   	field :nombre
   	field :usuario_id
     field :mensaje
-    field :estado, :integer
+    field :estado, type: Integer
     field :fecha_publicado
     field :created_at
     field :updated_at
@@ -36,7 +33,7 @@ class Video < AWS::Record::HashModel
 	validates :mensaje, presence: true
 	
 	# For the use of gem Paperclip
-	has_dynamoid_attached_file :attach, :storage => :s3, :s3_credentials => "#{Rails.root}/config/aws.yml", :bucket => "svconverter"
+	has_mongoid_attached_file :attach
 	validates_attachment_presence :attach
 	#validates_attachment_content_type :attach, :content_type => ['movie/quicktime','movie/avi','movie/mpg']
 
@@ -57,11 +54,16 @@ class Video < AWS::Record::HashModel
 	end
 
 	def convert_video
-		#Aquí va el código para colocar en la cola los mensajes
-		@sqs = AWS::SQS.new
-		@queue = @sqs.queues.create("dev_svconverterqueue")
-		@queue.send_message(self.estado.to_s+";"+self.id+";")  
-
+		#Aquí va el código para colocar en la cola los mensajes en SQS 
+		#@sqs = AWS::SQS.new
+		#@queue = @sqs.queues.create("dev_svconverterqueue")
+		#@queue.send_message(self.estado.to_s+";"+self.id+";")
+		# Create an IronMQ::Client object
+		@ironmq = IronMQ::Client.new(:token => "_UbrPaxqhKegRTHcB83w186P1Z8", :project_id => "5281b9309d749a0009000044")
+		# Get a queue (if it doesn't exist, it will be created when you first post a message)
+		@queue = @ironmq.queue("svconverter_queue")
+		# Post a message
+		@queue.post(self.estado.to_s+";"+self.id+";")
 	end
 	def process_video
 		#Esto lo vamos a crear como un rake

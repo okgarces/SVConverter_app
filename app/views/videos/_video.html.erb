@@ -8,7 +8,7 @@
     <div id="myElement<%= video.id %>">Loading the player...</div>
     	<script type="text/javascript">
         	jwplayer("myElement<%= video.id %>").setup({
-            file: "rtmp://s3mak58onym7kp.cloudfront.net/cfx/st/mp4:<%= video.attach.url[36,video.attach.url.size] %>",
+            file: "<%= video.attach.url%>",
             width: 420,
             height: 280,
             title: "<%= video.mensaje %>",

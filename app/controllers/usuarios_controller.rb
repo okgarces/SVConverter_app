@@ -19,7 +19,7 @@ class UsuariosController < ApplicationController
 
   # GET /usuarios/new
   def new
-    @usuario = Usuario.build
+    @usuario = Usuario.new
   end
 
   # GET /usuarios/1/edit

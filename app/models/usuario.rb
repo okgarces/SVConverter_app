@@ -1,9 +1,6 @@
-class Usuario < AWS::Record::HashModel
-	
-  include Dynamoid::Document
+class Usuario
+	include Mongoid::Document
   include ActiveModel::SecurePassword
-
-  table :name => :Usuarios, :key => :id, :read_capacity => 5, :write_capacity => 5
 
   field :id
   field :nombre
@@ -14,7 +11,7 @@ class Usuario < AWS::Record::HashModel
   field :updated_at
   field :remember_token
 
-  index :remember_token
+  #index :remember_token
 
   before_save {self.email = email.downcase}
   #before_create {validarpassword}
