@@ -38,7 +38,7 @@ while 0==0 do
 			File.delete(video_converted_url)
 			video.estado = STATE_CONVERTED
 			video.fecha_publicado = Time.zone.now
-			video.save!
+			video.save
 			@msg.delete
 		end
 	end
