@@ -94,7 +94,7 @@ SVConverterApp::Application.configure do
   :address        => ENV['MAILGUN_SMTP_SERVER'],
   :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
   :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-  :domain         => 'svconverter.heroku.com',
+  :domain         => 'app19299671.mailgun.org',
   :authentication => :plain,
   }
   ActionMailer::Base.delivery_method = :smtp
