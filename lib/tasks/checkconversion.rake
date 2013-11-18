@@ -37,4 +37,14 @@ while 0==0 do
 		end
 	end
 end
+
+def enviaremail(subject, email, body)
+
+am = ActionMailer::Base.new
+am.mail(
+    :to        => email,
+	:from    => 'dkodness@gmail.com',
+	:subject   => subject,
+    :text_body => body
+ 	)
 end
