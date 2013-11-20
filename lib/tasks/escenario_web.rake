@@ -2,17 +2,16 @@ task :escenario_web => :environment do
 
 require 'open-uri'
 
-for i in 0..1000 do
+for i in 0..10 do
 
-	puts Thread.new{funcionWeb()}
+	Thread.new{funcionWeb()}
 	
 end
 end
 
 def funcionWeb()
 
-	for i in 0..100000 do
-	contents = open('http://svconverterlbweb-621802330.us-east-1.elb.amazonaws.com:3000/') {|io| io.read}
-	puts contents
+	for i in 0..1000 do
+	puts contents = open('http://svconverter.herokuapp.com') {|io| io.read}
 	end
 end

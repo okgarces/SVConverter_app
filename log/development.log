@@ -10556,3 +10556,81 @@ ActionController::RoutingError (No route matches [GET] "/public/loaderio-1495b15
   Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
   Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.3ms)
   Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (52.8ms)
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 43.4322ms
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1869ms
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 53.3055ms
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2290ms
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 32.9035ms
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1784ms
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1533ms
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2578ms
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1649ms
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.8688ms
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2385ms
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2793ms
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1578ms

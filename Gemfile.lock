@@ -40,6 +40,8 @@ GEM
     bcrypt-ruby (3.0.1)
     bootstrap-sass (2.3.2.2)
       sass (~> 3.2)
+    bounscale (0.0.4)
+      json
     bson (2.0.0.rc3)
     builder (3.1.4)
     climate_control (0.0.3)
@@ -186,6 +188,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby (= 3.0.1)
   bootstrap-sass (= 2.3.2.2)
+  bounscale
   coffee-rails (~> 4.0.0)
   dalli
   ffmpeg
