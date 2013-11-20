@@ -9861,3 +9861,38 @@ Started GET "/assets/videos.js?body=1" for 127.0.0.1 at 2013-11-20 02:06:41 -050
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-20 02:06:41 -0500
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2806ms
+
+
+Started GET "/loaderio-1495b157ce5681d327996eba1013333c.html" for 127.0.0.1 at 2013-11-20 02:13:07 -0500
+Processing by StaticPagesController#loaderio as HTML
+Dalli::Server#connect mc4.dev.ec2.memcachier.com:11211
+Dalli/SASL authenticating as 00e098
+Dalli/SASL: 00e098
+Completed 500 Internal Server Error in 1023ms
+
+NameError (undefined local variable or method `txt' for #<StaticPagesController:0xa712cbc>):
+  app/controllers/static_pages_controller.rb:9:in `loaderio'
+
+
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/cloud/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.2ms)
+
+
+Started GET "/loaderio-1495b157ce5681d327996eba1013333c.html" for 127.0.0.1 at 2013-11-20 02:14:59 -0500
+Overwriting existing field nombre in class Video.
+Overwriting existing field attach_file_name in class Video.
+Overwriting existing field attach_content_type in class Video.
+Overwriting existing field attach_file_size in class Video.
+Overwriting existing field attach_updated_at in class Video.
+Processing by StaticPagesController#loaderio as HTML
+  Rendered text template (0.5ms)
+Sent data  (61.1ms)
+Completed 200 OK in 254ms (Views: 61.0ms)
