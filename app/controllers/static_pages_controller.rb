@@ -6,6 +6,6 @@ class StaticPagesController < ApplicationController
 
   def loaderio
   	#render 'loaderio-1495b157ce5681d327996eba1013333c.html'
-  	send_data "loaderio-1495b157ce5681d327996eba1013333c.txt"
+  	render "/public/loaderio-1495b157ce5681d327996eba1013333c.txt"
   end
 end
