@@ -32,6 +32,7 @@ gem 'iron_mq'
 gem 'streamio-ffmpeg'
 gem 'newrelic_rpm'
 gem 'bounscale'
+gem "hirefire-resource"
 #gem 'dynamoid'
 #gem 'aws-ses', :require => 'aws/ses'
 
