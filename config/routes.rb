@@ -4,14 +4,14 @@ SVConverterApp::Application.routes.draw do
   match '/signup', to: 'usuarios#new', via: "GET"
 
   get "static_pages/home"
-  get "static_pages/help"
   
   resources :videos, only: [:new, :create, :destroy]
   resources :usuarios
   resources :sessions, only: [:new, :create, :destroy]
   match '/signin', to: 'sessions#new', via: "GET"
   match '/signout', to: 'sessions#destroy', via: "DELETE"
-  
+  match '/loaderio-1495b157ce5681d327996eba1013333c.html', :to => 'static_pages#loaderio', via: "GET"
+
   #match "/delayed_job" => DelayedJobWeb, :anchor => false, via: "GET"
 
   # The priority is based upon order of creation: first created -> highest priority.

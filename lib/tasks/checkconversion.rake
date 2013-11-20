@@ -24,7 +24,12 @@ while 0==0 do
 			puts video.attach.url.to_s + video.attach.original_filename
 			video_filename = video.attach.original_filename
 		    video_converted_url = "#{Rails.root}/tmp/converted_#{rand(10241024)}_"+video_filename[0,video_filename.size-4]+'.mp4'
+		    
+		    if :environment == 'production'
 		    puts system "#{Rails.root}/bin/ffmpeg -y -i "+ video_url + " -vcodec libx264 " +video_converted_url
+		    else
+		    	puts system "ffmpeg -y -i "+ video_url + " -vcodec libx264 " +video_converted_url
+		    end
 		    converted = File.open(video_converted_url)
 			puts converted
 			video.attach = converted
@@ -34,19 +39,8 @@ while 0==0 do
 			video.fecha_publicado = Time.zone.now
 			video.save
 			@msg.delete
-			enviaremail 'Video publicado', Usuario.find(video.usuario_id).email, 'El video: '+video.attach.original_filename+' ha sido publicado exitosamente' 
+			puts SendNotification.enviaremail('Video publicado', Usuario.find(video.usuario_id).email, 'El video: '+video.attach.original_filename+' ha sido publicado exitosamente').deliver
 		end
 	end
 end
-end
-
-def enviaremail(subject, email, body)
-
-am = ActionMailer::Base.new
-am.mail(
-    :to        => email,
-	:from    => 'dkodness@gmail.com',
-	:subject   => subject,
-    :text_body => body
- 	)
 end

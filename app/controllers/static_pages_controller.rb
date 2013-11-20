@@ -4,6 +4,7 @@ class StaticPagesController < ApplicationController
   	@videos = Video.where(:estado => Video.converted).sort_by{|e| e[:attach_updated_at]}.reverse
   end
 
-  def help
+  def loaderio
+  	render 'loaderio-1495b157ce5681d327996eba1013333c.html'
   end
 end

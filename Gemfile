@@ -30,6 +30,7 @@ gem 'mongoid-paperclip', :require => "mongoid_paperclip"
 gem 'fog'
 gem 'iron_mq'
 gem 'streamio-ffmpeg'
+gem 'newrelic_rpm'
 #gem 'dynamoid'
 #gem 'aws-ses', :require => 'aws/ses'
 
